@@ -20,3 +20,17 @@
 /Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhoneSimulator/Debug/DroppyBalls.iOS.exe
 /Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/DroppyBalls.iOS.exe
 /Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/DroppyBalls.iOS.exe.mdb
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/ball_blue.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/ball_green.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/ball_red.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/ball_yellow.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/block_blue.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/block_green.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/block_red.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/block_yellow.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/button_ads.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/button_rank.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/button_star.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/button_start.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/title_ball.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/optimized/Content/Images/title_droppy.png

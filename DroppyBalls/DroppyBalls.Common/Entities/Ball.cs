@@ -2,35 +2,69 @@
 using System.Collections.Generic;
 using CocosSharp;
 
+
 namespace DroppyBalls.Common
 {
-	public class Ball : CCSprite
+
+
+	enum BallType {red,blue,green,yellow};
+
+	public class Ball : CCNode
 	{
-		public Ball () : base ()
+		CCSprite sprite;
+		BallType type;
+		public float VelocityX {
+			get;
+			set;
+		}
+		public float VelocityY {
+			get;
+			set;
+		}
+
+
+
+
+		public Ball (BallType type) : base ()
 		{
+			this.type = type;
+			String ballName = "";
+			switch (this.type) {
+		
+			case BallType.red:
+				ballName = Constant.redBall;
+				break;
+			case BallType.blue:
+				ballName = Constant.blueBall;
+				break;
+			case BallType.green:
+				ballName = Constant.greenBall;
+				break;
+			case BallType.yellow:
+				ballName = Constant.yellowBall;
+				break;
+			default:
+				break;
+
+			}
+
+			this.sprite = new CCSprite (ballName);
+			this.sprite.AnchorPoint = CCPoint.AnchorMiddle;
+			this.AddChild (this.sprite);
+
+			this.Schedule (ApplyVelocity);
+
 			// Load and instantate your assets here
 
 			// Make any renderable node objects (e.g. sprites) children of this layer
 		}
 
-		protected override void AddedToScene ()
-		{
-			base.AddedToScene ();
+		void ApplyVelocity(float dt){
 
-			// Use the bounds to layout the positioning of our drawable assets
-			CCRect bounds = VisibleBoundsWorldspace;
+			PositionX += this.VelocityX * dt;
+			PositionY += this.VelocityY * dt;
 
-			// Register for touch events
-			var touchListener = new CCEventListenerTouchAllAtOnce ();
-			touchListener.OnTouchesEnded = OnTouchesEnded;
-			AddEventListener (touchListener, this);
 		}
 
-		void OnTouchesEnded (List<CCTouch> touches, CCEvent touchEvent)
-		{
-			if (touches.Count > 0) {
-				// Perform touch handling here
-			}
-		}
 	}
 }

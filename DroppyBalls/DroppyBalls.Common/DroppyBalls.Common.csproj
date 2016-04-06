@@ -32,6 +32,12 @@
   <ItemGroup>
     <Compile Include="GameLayer.cs" />
     <Compile Include="Entities\Ball.cs" />
+    <Compile Include="Common\Constant.cs" />
+    <Compile Include="Entities\CatchingBall.cs" />
+    <Compile Include="Entities\CatchingBar.cs" />
+    <Compile Include="GameManager.cs" />
+    <Compile Include="Intro.cs" />
+    <Compile Include="GameScene.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
@@ -50,5 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
+    <Folder Include="Common\" />
   </ItemGroup>
 </Project>
