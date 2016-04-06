@@ -1,0 +1,8 @@
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/DroppyBalls.Common.dll.mdb
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/DroppyBalls.Common.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/obj/Debug/DroppyBalls.Common.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/obj/Debug/DroppyBalls.Common.dll.mdb
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/box2d.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/CocosSharp.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/MonoGame.Framework.dll
