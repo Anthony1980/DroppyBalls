@@ -7,7 +7,7 @@ namespace DroppyBalls.Common
 {
 
 
-	enum BallType {red,blue,green,yellow};
+	public enum BallType {red,blue,green,yellow};
 
 	public class Ball : CCNode
 	{
@@ -24,10 +24,10 @@ namespace DroppyBalls.Common
 
 
 
-
-		public Ball (BallType type) : base ()
+	
+		public Ball (BallType t) :base()
 		{
-			this.type = type;
+			this.type = t;
 			String ballName = "";
 			switch (this.type) {
 		

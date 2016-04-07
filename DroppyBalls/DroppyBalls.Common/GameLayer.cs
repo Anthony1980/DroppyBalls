@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using CocosSharp;
+using DroppyBalls.Common;
 
 namespace DroppyBalls
 {
@@ -11,6 +12,9 @@ namespace DroppyBalls
 			// Load and instantate your assets here
 
 			// Make any renderable node objects (e.g. sprites) children of this layer
+
+			AddChild (GameManager.Share);
+
 		}
 
 		protected override void AddedToScene ()

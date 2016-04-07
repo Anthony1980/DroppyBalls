@@ -69,7 +69,7 @@ namespace DroppyBalls.iOS
 					contentSearchPaths.Add ("Images/Ld");
 					CCSprite.DefaultTexelToContentSizeRatio = 1.0f;
 				}
-
+			
 				gameView.ContentManager.SearchPaths = contentSearchPaths;
 
 				CCScene gameScene = new CCScene (gameView);
