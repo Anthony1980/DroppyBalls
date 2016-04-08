@@ -24,6 +24,13 @@ namespace DroppyBalls.Common
 		public const String button_start = "Images/button_start.png";
 		public const float winSizeX = 414;
 		public const float winSizeY = 736;
+		public const float scoreFontSize = 28;
+		public const String scoreTitle = "Score:";
+		public const String bestScoreTitle = "Best:";
+
+
+		//store key
+		public const String kBestScore = "bestScore";
 
 	}
 }

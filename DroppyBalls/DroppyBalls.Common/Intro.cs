@@ -11,7 +11,6 @@ namespace DroppyBalls.Common
 			// Load and instantate your assets here
 
 
-		
 
 			// Make any renderable node objects (e.g. sprites) children of this layer
 			var title1 = new CCSprite(Constant.title_droppy){
@@ -26,12 +25,31 @@ namespace DroppyBalls.Common
 			};
 			AddChild (title2);
 
-			var 
 
+			var str_score = String.Format ("{0}{1}", Constant.scoreTitle,100);
+			var lblScore = new CCLabel (str_score, "Arial", Constant.scoreFontSize) {
 
+				Color = new CCColor3B(0,0,0),
+				HorizontalAlignment = CCTextAlignment.Center,
+				VerticalAlignment = CCVerticalTextAlignment.Center,
+				AnchorPoint = CCPoint.AnchorMiddle
+			};
+			AddChild (lblScore);
+			lblScore.PositionX = Constant.winSizeX / 2;
+			lblScore.PositionY = title2.PositionY - 30;
 
+			var str_bestScore =  String.Format ("{0}{1}", Constant.bestScoreTitle, 100);
+			var lblBestScore = new CCLabel (str_bestScore, "Arial", Constant.scoreFontSize) {
 
+				Color = new CCColor3B(0,0,0),
+				HorizontalAlignment = CCTextAlignment.Center,
+				VerticalAlignment = CCVerticalTextAlignment.Center,
+				AnchorPoint = CCPoint.AnchorMiddle
+			};
+			AddChild (lblBestScore);
 
+			lblBestScore.PositionX = Constant.winSizeX / 2;
+			lblBestScore.PositionY = lblScore.PositionY - 20;
 
 
 
@@ -53,9 +71,24 @@ namespace DroppyBalls.Common
 
 		void OnTouchesEnded (List<CCTouch> touches, CCEvent touchEvent)
 		{
+			
+
+				// Set world dimensions
+			GameView.DesignResolution = new CCSizeI (414, 736);
+
+			GameView.ContentManager.SearchPaths = new List <String>() { "Fonts", "Sounds", "Images" };
+
+			CCScene gameScene = new CCScene (GameView);
+			gameScene.AddLayer (new GameScene ());
+			GameView.RunWithScene (gameScene);
+
+		
+
 			if (touches.Count > 0) {
 				// Perform touch handling here
 			}
 		}
+
+
 	}
 }

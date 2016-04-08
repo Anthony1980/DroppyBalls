@@ -14,6 +14,16 @@ namespace DroppyBalls.Common
 
 
 
+			var lblScore = new CCLabel ("Game scene", "Arial", Constant.scoreFontSize) {
+
+				Color = new CCColor3B(0,0,0),
+				HorizontalAlignment = CCTextAlignment.Center,
+				VerticalAlignment = CCVerticalTextAlignment.Center,
+				AnchorPoint = CCPoint.AnchorMiddle
+			};
+			AddChild (lblScore);
+			lblScore.PositionX = Constant.winSizeX / 2;
+			lblScore.PositionY = Constant.winSizeY / 2;
 		}
 
 		protected override void AddedToScene ()
@@ -31,6 +41,15 @@ namespace DroppyBalls.Common
 
 		void OnTouchesEnded (List<CCTouch> touches, CCEvent touchEvent)
 		{
+			// Set world dimensions
+			GameView.DesignResolution = new CCSizeI (414, 736);
+
+			GameView.ContentManager.SearchPaths = new List <String>() { "Fonts", "Sounds", "Images" };
+
+			CCScene gameScene = new CCScene (GameView);
+			gameScene.AddLayer (new Intro ());
+			GameView.RunWithScene (gameScene);
+		
 			if (touches.Count > 0) {
 				// Perform touch handling here
 			}

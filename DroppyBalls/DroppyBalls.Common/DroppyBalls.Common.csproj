@@ -41,6 +41,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
+    <Folder Include="Entities\" />
+    <Folder Include="Common\" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="box2d">
       <HintPath>..\..\packages\CocosSharp.1.7.1.0\lib\portable-net45+win+wpa81+wp81\box2d.dll</HintPath>
     </Reference>
@@ -53,9 +57,5 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entities\" />
-    <Folder Include="Common\" />
   </ItemGroup>
 </Project>
