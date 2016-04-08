@@ -42,9 +42,7 @@ namespace DroppyBalls.Common
 		void OnTouchesEnded (List<CCTouch> touches, CCEvent touchEvent)
 		{
 			// Set world dimensions
-			GameView.DesignResolution = new CCSizeI (414, 736);
 
-			GameView.ContentManager.SearchPaths = new List <String>() { "Fonts", "Sounds", "Images" };
 
 			CCScene gameScene = new CCScene (GameView);
 			gameScene.AddLayer (new Intro ());
