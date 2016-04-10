@@ -13,8 +13,19 @@ namespace DroppyBalls
 
 			// Make any renderable node objects (e.g. sprites) children of this layer
 
-			AddChild (GameManager.Share);
+			var callFunc = new CCCallFunc (startIntro);
+			this.RunAction (callFunc);
 
+		}
+		public void startIntro(){
+
+			GameView.DesignResolution = new CCSizeI (414, 736);
+
+			GameView.ContentManager.SearchPaths = new List <String>() { "Fonts", "Sounds", "Images" };
+
+			CCScene gameScene = new CCScene (GameView);
+			gameScene.AddLayer (new Intro());
+			GameView.RunWithScene (gameScene);
 		}
 
 		protected override void AddedToScene ()
@@ -28,12 +39,19 @@ namespace DroppyBalls
 			var touchListener = new CCEventListenerTouchAllAtOnce ();
 			touchListener.OnTouchesEnded = OnTouchesEnded;
 			AddEventListener (touchListener, this);
+
+
+
+
 		}
 
 		void OnTouchesEnded (List<CCTouch> touches, CCEvent touchEvent)
 		{
+			
+
 			if (touches.Count > 0) {
 				// Perform touch handling here
+
 			}
 		}
 	}

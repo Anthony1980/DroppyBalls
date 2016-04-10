@@ -18,7 +18,7 @@ namespace DroppyBalls.Common
 			// do something
 			this.score = 0;
 			this.bestScore = 0;
-			this.AddChild (new Intro ());
+
 
 		}
 		public static GameManager Share {
@@ -29,35 +29,6 @@ namespace DroppyBalls.Common
 				return instance;
 			}
 		}
-		public void Push(CCLayer layer){
-			this.AddChild (layer);
-		}
-		public void Pop(){
-			var node = this.Children.Peek ();
-			node.RemoveFromParent ();
-			node.RemoveEventListeners ();
-		}
-		public void Replace(CCLayer layer){
-			var node = this.Children.Peek();
-			node.RemoveFromParent ();
-			node.RemoveEventListeners ();
-			this.AddChild (layer);
-		}
-
-//		public void gameOver(){
-//
-//			// show gameOver Scene
-//
-//		}
-//
-//		public void startGame(){
-//
-//			// show GameScene
-//
-//
-//		}
-//		public void showGameCenter(){
-//		
-//		}
+	
 	}
 }

@@ -6,6 +6,11 @@ namespace DroppyBalls.Common
 {
 	public  static class Constant
 	{
+
+		//store key
+		public const String kBestScore = "bestScore";
+
+		//resources path
 		public const String redBall = "Images/ball_red.png";
 		public const String blueBall = "Images/ball_blue.png";
 		public const String greenBall = "Images/ball_green.png";
@@ -18,19 +23,21 @@ namespace DroppyBalls.Common
 		public const String title_ball = "Images/title_ball.png";
 		public const String title_droppy = "Images/title_droppy.png";
 
-		public const String button_ads = "Images/button_ads.png";
-		public const String button_rank = "Images/button_rank.png";
-		public const String button_star = "Images/button_star.png";
-		public const String button_start = "Images/button_start.png";
+		public const String btn_ads = "Images/button_ads.png";
+		public const String btn_rank = "Images/button_rank.png";
+		public const String btn_star = "Images/button_star.png";
+		public const String btn_start = "Images/button_start.png";
 		public const float winSizeX = 414;
 		public const float winSizeY = 736;
-		public const float scoreFontSize = 28;
-		public const String scoreTitle = "Score:";
-		public const String bestScoreTitle = "Best:";
+		public const float scoreFontSize = 36;
+		public const float scoreGameFontSize = 180;
+		public const String scoreTitle = "SCORE:";
+		public const String bestScoreTitle = "BEST:";
+
+		//position sprite
+		//Intro scene
 
 
-		//store key
-		public const String kBestScore = "bestScore";
 
 	}
 }

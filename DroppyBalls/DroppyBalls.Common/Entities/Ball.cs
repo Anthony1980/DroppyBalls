@@ -22,11 +22,14 @@ namespace DroppyBalls.Common
 			set;
 		}
 
-
+		int track;
 
 	
-		public Ball (BallType t) :base()
+
+
+		public Ball (BallType t, int track) :base()
 		{
+			this.track = track;
 			this.type = t;
 			String ballName = "";
 			switch (this.type) {
