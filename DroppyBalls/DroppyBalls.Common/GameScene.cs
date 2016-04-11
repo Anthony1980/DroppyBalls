@@ -22,7 +22,7 @@ namespace DroppyBalls.Common
 
 			// Make any renderable node objects (e.g. sprites) children of this layer
 
-
+			GameManager.Share.score = 0;
 
 			lblScore = new CCLabel ("0", "Arial-bold", Constant.scoreGameFontSize) {
 
@@ -36,7 +36,7 @@ namespace DroppyBalls.Common
 			lblScore.PositionY = Constant.winSizeY - 150;
 
 			this.bar = new CatchingBar ();
-			AddChild (this.bar);
+			AddChild (this.bar,2);
 			this.bar.PositionY = Constant.highDestructor;
 
 
@@ -136,6 +136,7 @@ namespace DroppyBalls.Common
 				//game over
 				if (GameManager.Share.score > GameManager.Share.bestScore) {
 					GameManager.Share.bestScore = GameManager.Share.score;
+
 				}
 				this.gameOver();
 			}

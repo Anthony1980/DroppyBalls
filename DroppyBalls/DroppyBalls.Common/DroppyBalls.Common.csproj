@@ -38,6 +38,7 @@
     <Compile Include="GameManager.cs" />
     <Compile Include="Intro.cs" />
     <Compile Include="GameScene.cs" />
+    <Compile Include="GameCenterManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <ItemGroup>
@@ -53,6 +54,36 @@
     </Reference>
     <Reference Include="MonoGame.Framework">
       <HintPath>..\..\packages\CocosSharp.1.7.1.0\lib\portable-net45+win+wpa81+wp81\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Interfaces">
+      <HintPath>..\..\packages\Rx-Interfaces.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Core">
+      <HintPath>..\..\packages\Rx-Core.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.Linq">
+      <HintPath>..\..\packages\Rx-Linq.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive.PlatformServices">
+      <HintPath>..\..\packages\Rx-PlatformServices.2.2.5\lib\portable-net45+winrt45+wp8+wpa81\System.Reactive.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Foundation.Common">
+      <HintPath>..\..\packages\Foundation.Common.1.5.0.0\lib\portable-net45+win+wpa81\Foundation.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpSwift.Attributes">
+      <HintPath>..\..\packages\SharpSwift.Attributes.1.1.0\lib\SharpSwift.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Foundation">
+      <HintPath>..\..\packages\CocoaSharp.Foundation.1.0.0\lib\Foundation.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreGraphics">
+      <HintPath>..\..\packages\CocoaSharp.CoreGraphics.0.1.0\lib\CoreGraphics.dll</HintPath>
+    </Reference>
+    <Reference Include="ObjectiveC">
+      <HintPath>..\..\packages\CocoaSharp.ObjectiveC.1.0.0\lib\ObjectiveC.dll</HintPath>
+    </Reference>
+    <Reference Include="UIKit">
+      <HintPath>..\..\packages\CocoaSharp.UIKit.1.2.0\lib\UIKit.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
