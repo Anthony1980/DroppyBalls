@@ -4,33 +4,46 @@ using CocosSharp;
 
 namespace DroppyBalls.Common
 {
-	public class CatchingBall : CCLayerColor
+	public class CatchingBall : CCNode
 	{
-		public CatchingBall () : base (CCColor4B.AliceBlue)
+		public CCSprite sprite;
+		public BallType type;
+		public int track;
+		public CatchingBall (BallType t, int track) : base ()
 		{
 			// Load and instantate your assets here
 
 			// Make any renderable node objects (e.g. sprites) children of this layer
-		}
+			this.track = track;
+			this.type = t;
+			String ballName = "";
+			switch (this.type) {
 
-		protected override void AddedToScene ()
-		{
-			base.AddedToScene ();
+			case BallType.red:
+				ballName = Constant.block_red;
+				break;
+			case BallType.blue:
+				ballName = Constant.block_blue;
+				break;
+			case BallType.green:
+				ballName = Constant.block_green;
+				break;
+			case BallType.yellow:
+				ballName = Constant.block_yellow;
+				break;
+			default:
+				break;
 
-			// Use the bounds to layout the positioning of our drawable assets
-			CCRect bounds = VisibleBoundsWorldspace;
-
-			// Register for touch events
-			var touchListener = new CCEventListenerTouchAllAtOnce ();
-			touchListener.OnTouchesEnded = OnTouchesEnded;
-			AddEventListener (touchListener, this);
-		}
-
-		void OnTouchesEnded (List<CCTouch> touches, CCEvent touchEvent)
-		{
-			if (touches.Count > 0) {
-				// Perform touch handling here
 			}
+
+			this.sprite = new CCSprite (ballName);
+			this.sprite.AnchorPoint = CCPoint.AnchorMiddle;
+			this.AddChild (this.sprite);
+			this.sprite.Scale = (Constant.winSizeX / 8) / this.sprite.BoundingBox.Size.Width;
+
 		}
+
+
+
 	}
 }

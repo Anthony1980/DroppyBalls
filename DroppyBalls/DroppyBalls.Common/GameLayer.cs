@@ -24,35 +24,10 @@ namespace DroppyBalls
 			GameView.ContentManager.SearchPaths = new List <String>() { "Fonts", "Sounds", "Images" };
 
 			CCScene gameScene = new CCScene (GameView);
-			gameScene.AddLayer (new Intro());
+			gameScene.AddLayer (new Intro(false));
 			GameView.RunWithScene (gameScene);
 		}
 
-		protected override void AddedToScene ()
-		{
-			base.AddedToScene ();
 
-			// Use the bounds to layout the positioning of our drawable assets
-			CCRect bounds = VisibleBoundsWorldspace;
-
-			// Register for touch events
-			var touchListener = new CCEventListenerTouchAllAtOnce ();
-			touchListener.OnTouchesEnded = OnTouchesEnded;
-			AddEventListener (touchListener, this);
-
-
-
-
-		}
-
-		void OnTouchesEnded (List<CCTouch> touches, CCEvent touchEvent)
-		{
-			
-
-			if (touches.Count > 0) {
-				// Perform touch handling here
-
-			}
-		}
 	}
 }

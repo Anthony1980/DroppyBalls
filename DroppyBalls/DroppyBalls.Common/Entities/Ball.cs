@@ -7,12 +7,15 @@ namespace DroppyBalls.Common
 {
 
 
+
 	public enum BallType {red,blue,green,yellow};
 
 	public class Ball : CCNode
 	{
-		CCSprite sprite;
-		BallType type;
+		public CCSprite sprite;
+		public BallType type;
+		public  IBallCallback ballCallBack; 
+
 		public float VelocityX {
 			get;
 			set;
@@ -22,10 +25,8 @@ namespace DroppyBalls.Common
 			set;
 		}
 
-		int track;
-
-	
-
+		public int track;
+		private bool isRespawned;
 
 		public Ball (BallType t, int track) :base()
 		{
@@ -50,10 +51,15 @@ namespace DroppyBalls.Common
 				break;
 
 			}
-
+			this.VelocityY = Constant.ballVelocityY;
 			this.sprite = new CCSprite (ballName);
 			this.sprite.AnchorPoint = CCPoint.AnchorMiddle;
 			this.AddChild (this.sprite);
+
+			this.sprite.Scale = (Constant.winSizeX/8)*0.7f / this.sprite.BoundingBox.Size.Width;
+
+
+			this.isRespawned = false;
 
 			this.Schedule (ApplyVelocity);
 
@@ -66,7 +72,17 @@ namespace DroppyBalls.Common
 
 			PositionX += this.VelocityX * dt;
 			PositionY += this.VelocityY * dt;
+			if ((this.isRespawned == false) && (PositionY < Constant.winSizeY - Constant.highNeedRespawn)) {
 
+				this.isRespawned = true;
+				ballCallBack.NeedRespawn ();
+
+			}
+			if (PositionY < Constant.highDestructor) {
+
+				ballCallBack.NeedCheckPair (this);
+
+			}
 		}
 
 	}

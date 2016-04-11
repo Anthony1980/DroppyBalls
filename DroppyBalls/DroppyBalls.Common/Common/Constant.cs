@@ -31,13 +31,23 @@ namespace DroppyBalls.Common
 		public const float winSizeY = 736;
 		public const float scoreFontSize = 36;
 		public const float scoreGameFontSize = 180;
+		public const float scoreGameOverFontSize = 110;
 		public const String scoreTitle = "SCORE:";
 		public const String bestScoreTitle = "BEST:";
 
+		public const float titleGameOverScoreFontSize = 24;
+		public const String totalScoreTitle = "SCORE";
+		public const String highScoreTitle = "HIGH SCORE";
+
+
+		public const float highDestructor = 150;
+		public const float highNeedRespawn = 100;
+		public const float ballVelocityY = -250;
 		//position sprite
 		//Intro scene
 
-
+		//Animate settings
+		public const float moveBarDelay = 0.1f;
 
 	}
 }
