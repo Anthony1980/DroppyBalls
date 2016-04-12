@@ -66,3 +66,5 @@
 /Store/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/Info.plist
 /Store/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/ibtool/Main.storyboardc/UIViewController-BYZ-38-t0r.nib
 /Store/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/ibtool/_BundleResourceWithLogicalName.items
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhoneSimulator/Debug/Foundation.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhoneSimulator/Debug/SharpSwift.Attributes.dll

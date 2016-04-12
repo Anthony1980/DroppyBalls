@@ -30,3 +30,7 @@
 /Store/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/DroppyBalls.Common.dll
 /Store/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/obj/Debug/DroppyBalls.Common.dll
 /Store/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/obj/Debug/DroppyBalls.Common.dll.mdb
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/DroppyBalls.Common.dll.mdb
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/DroppyBalls.Common.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/obj/Debug/DroppyBalls.Common.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/obj/Debug/DroppyBalls.Common.dll.mdb

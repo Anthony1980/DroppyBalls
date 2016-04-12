@@ -41,8 +41,8 @@ namespace DroppyBalls.Common
 
 
 		public const float highDestructor = 150;
-		public const float highNeedRespawn = 100;
-		public const float ballVelocityY = -250;
+		public const float highNeedRespawn = 150;
+		public const float ballVelocityY = -200;
 		//position sprite
 		//Intro scene
 

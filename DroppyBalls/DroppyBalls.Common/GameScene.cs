@@ -39,7 +39,7 @@ namespace DroppyBalls.Common
 
 			this.bar = new CatchingBar ();
 			AddChild (this.bar,-1);
-			this.bar.PositionY = Constant.highDestructor;
+			this.bar.PositionY = Constant.highDestructor - 10;
 
 
 			this.generateBall ();
