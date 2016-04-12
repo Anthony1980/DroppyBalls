@@ -44,7 +44,7 @@ namespace DroppyBalls.Common
 				lblScore.PositionX = Constant.winSizeX / 2;
 				lblScore.PositionY = title2.PositionY - 70;
 
-				var str_bestScore =  String.Format ("{0}{1}", Constant.bestScoreTitle, 100);
+				var str_bestScore =  String.Format ("{0}{1}", Constant.bestScoreTitle, GameManager.Share.bestScore);
 				var lblBestScore = new CCLabel (str_bestScore, "Arial", Constant.scoreFontSize) {
 
 					Color = new CCColor3B(180,180,180),

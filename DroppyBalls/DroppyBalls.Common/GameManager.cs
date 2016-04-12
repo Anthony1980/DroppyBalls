@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using CocosSharp;
-
+using Foundation;
 
 namespace DroppyBalls.Common
 {
@@ -18,6 +18,10 @@ namespace DroppyBalls.Common
 			// do something
 			this.score = 0;
 			this.bestScore = 0;
+
+		///	this.bestScore = NSUserDefaults.StandardUserDefaults().IntegerForKey(Constant.kBestScore);
+
+
 
 
 		}

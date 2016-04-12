@@ -75,6 +75,8 @@ namespace DroppyBalls.iOS
 				CCScene gameScene = new CCScene (gameView);
 				gameScene.AddLayer (new GameLayer ());
 				gameView.RunWithScene (gameScene);
+
+			
 			}
 		}
 	}

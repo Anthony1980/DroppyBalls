@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using CocosSharp;
+using Foundation;
+
 
 namespace DroppyBalls.Common
 {
@@ -36,7 +38,7 @@ namespace DroppyBalls.Common
 			lblScore.PositionY = Constant.winSizeY - 150;
 
 			this.bar = new CatchingBar ();
-			AddChild (this.bar,2);
+			AddChild (this.bar,-1);
 			this.bar.PositionY = Constant.highDestructor;
 
 
@@ -93,12 +95,14 @@ namespace DroppyBalls.Common
 
 		void gameOver(){
 
+
 			CCScene gameScene = new CCScene (GameView);
 			Intro intro = new Intro (true);
 			intro.isGameOver = true;
 			gameScene.AddLayer (intro);
 			GameView.RunWithScene (gameScene);
 
+		
 		}
 
 		void OnTouchesEnded (List<CCTouch> touches, CCEvent touchEvent)
@@ -137,6 +141,13 @@ namespace DroppyBalls.Common
 				if (GameManager.Share.score > GameManager.Share.bestScore) {
 					GameManager.Share.bestScore = GameManager.Share.score;
 
+
+
+			
+//					NSUserDefaults.StandardUserDefaults ().SetInteger (GameManager.Share.score, Constant.kBestScore);  
+//					NSUserDefaults.StandardUserDefaults().Synchronize ();
+
+				
 				}
 				this.gameOver();
 			}

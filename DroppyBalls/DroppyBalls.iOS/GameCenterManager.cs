@@ -23,8 +23,11 @@ namespace MTGKTapper
 			};
 		}
 
-		public void ReportScore (long score, string category, MTGKTapperViewController controller)
+		public void ReportScore (long score, string category)
 		{
+			
+
+
 			var scoreReporter = new GKScore (category) {
 				Value = score
 			};
@@ -34,7 +37,7 @@ namespace MTGKTapper
 				else
 					ShowAlert("Score Reported Failed", "Score Reported Failed");
 				NSThread.SleepFor (1);
-				controller.UpdateHighScore ();
+				//controller.UpdateHighScore ();
 			});
 		}
 
