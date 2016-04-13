@@ -5,8 +5,8 @@ using CocosSharp;
 using Foundation;
 using GameKit;
 using DroppyBalls.iOS;
-using DroppyBalls.Common;
-[assembly: Xamarin.Forms.Dependency(typeof (UIViewController))]
+
+
 
 namespace DroppyBalls.iOS
 {
@@ -15,10 +15,9 @@ namespace DroppyBalls.iOS
 
 	public partial class ViewController : UIViewController
 	{
-		GameCenterManager gameCenterManager;
-		GKLeaderboard currentLeaderBoard;
+		
 	
-		string currentCategory = "matchingballs";
+
 		public ViewController (IntPtr handle) : base (handle)
 		{
 		}
@@ -32,7 +31,7 @@ namespace DroppyBalls.iOS
 				GameView.ViewCreated += LoadGame;
 			}
 
-			InitGameCenter ();
+		
 
 		}
 
@@ -96,79 +95,6 @@ namespace DroppyBalls.iOS
 			}
 		}
 
-
-
-		public void reportScore (long score, string category)
-		{
-
-			var scoreReporter = new GKScore (category) {
-				Value = score
-			};
-			scoreReporter.ReportScore (error => {
-				
-					
-				NSThread.SleepFor (1);
-				//controller.UpdateHighScore ();
-			});
-		}
-		public void showLeaderBoard(){
-
-			var leaderboardController = new GKLeaderboardViewController ();
-			leaderboardController.Category = currentCategory;
-			leaderboardController.TimeScope = GKLeaderboardTimeScope.AllTime;
-			leaderboardController.DidFinish += (senderLeaderboard, eLeaderboard) => leaderboardController.DismissViewController (true, null);
-			PresentViewController (leaderboardController, true, null);
-		}
-
-
-
-
-		void InitGameCenter ()
-		{
-			gameCenterManager = new GameCenterManager ();
-			SetAuthenticateHandler ();
-		}
-
-		void SetAuthenticateHandler ()
-		{
-			GKLocalPlayer.LocalPlayer.AuthenticateHandler = (ui, error) => {
-				if (ui != null) {
-					PresentViewController (ui, true, null);
-
-				} else if (GKLocalPlayer.LocalPlayer.Authenticated) {
-					currentLeaderBoard = gameCenterManager.ReloadLeaderboard (currentCategory);
-					UpdateHighScore ();
-
-				} else {
-					var alert = new UIAlertView ("Game Center Account Required", "Need login the game center!", null, "Retry", null);
-					alert.Clicked += (sender, e) => {
-						//GKLocalPlayer.LocalPlayer.Authenticated();
-					};
-					alert.Show ();
-				}
-			};
-		}
-
-		public void UpdateHighScore ()
-		{
-			currentLeaderBoard.LoadScores ((scoreArray, error) => {
-				if (error == null) {
-					long personalBest;
-					if (currentLeaderBoard.LocalPlayerScore != null)
-						personalBest = currentLeaderBoard.LocalPlayerScore.Value;
-					else
-						personalBest = 0;
-					
-					Console.WriteLine (currentLeaderBoard.Title);
-
-					var scores = currentLeaderBoard.Scores;
-					if (scores != null && scores.Length > 0)
-					{}
-				} else {
-					
-				}
-			});
-		}
 
 	}
 }

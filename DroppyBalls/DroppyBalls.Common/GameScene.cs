@@ -45,7 +45,7 @@ namespace DroppyBalls.Common
 
 			this.generateBall ();
 
-
+			CMGameCenterManager.Share.SetAuthenticateHandle ();
 
 		}
 

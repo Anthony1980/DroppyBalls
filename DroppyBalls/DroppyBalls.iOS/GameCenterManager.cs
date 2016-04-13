@@ -3,13 +3,17 @@ using Foundation;
 using GameKit;
 using UIKit;
 using CocosSharp;
+using DroppyBalls.iOS;
+using DroppyBalls.Common;
 
-namespace DroppyBalls.Common
+[assembly: Xamarin.Forms.Dependency(typeof (GameCenterManager))]
+namespace DroppyBalls.iOS
 {
-	public class GameCenterManager
+	public class GameCenterManager:IGameCenterManager
 	{
 		NSMutableDictionary earnedAchievementCache;
 		string currentCategory = "matchingballs";
+		GKLeaderboard currentLeaderBoard;
 		public static bool IsGameCenterAvailable ()
 		{
 			return UIDevice.CurrentDevice.CheckSystemVersion (4, 1);
@@ -97,7 +101,7 @@ namespace DroppyBalls.Common
 			alert.Show ();
 		}
 
-		public void showLeaderBoard(){
+		public void ShowLeaderBoard(){
 
 			var leaderboardController = new GKLeaderboardViewController ();
 			leaderboardController.Category = currentCategory;
@@ -108,6 +112,52 @@ namespace DroppyBalls.Common
 			var vc = window.RootViewController;
 			 
 			vc.PresentViewController (leaderboardController, true, null);
+		}
+
+		public void SetAuthenticateHandle(){
+
+
+			GKLocalPlayer.LocalPlayer.AuthenticateHandler = (ui, error) => {
+				if (ui != null) {
+					var window = UIApplication.SharedApplication.KeyWindow;
+					var vc = window.RootViewController;
+
+					vc.PresentViewController (ui, true, null);
+
+				} else if (GKLocalPlayer.LocalPlayer.Authenticated) {
+					currentLeaderBoard = this.ReloadLeaderboard (currentCategory);
+					UpdateHighScore ();
+
+				} else {
+					var alert = new UIAlertView ("Game Center Account Required", "Need login the game center!", null, "Retry", null);
+					alert.Clicked += (sender, e) => {
+						//GKLocalPlayer.LocalPlayer.Authenticated();
+					};
+					alert.Show ();
+				}
+			};
+
+		}
+
+		public void UpdateHighScore ()
+		{
+			currentLeaderBoard.LoadScores ((scoreArray, error) => {
+				if (error == null) {
+					long personalBest;
+					if (currentLeaderBoard.LocalPlayerScore != null)
+						personalBest = currentLeaderBoard.LocalPlayerScore.Value;
+					else
+						personalBest = 0;
+
+					Console.WriteLine (currentLeaderBoard.Title);
+
+					var scores = currentLeaderBoard.Scores;
+					if (scores != null && scores.Length > 0)
+					{}
+				} else {
+
+				}
+			});
 		}
 	}
 }
