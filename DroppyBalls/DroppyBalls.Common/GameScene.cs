@@ -17,6 +17,7 @@ namespace DroppyBalls.Common
 
 		CatchingBar bar;
 		CCLabel lblScore;
+	
 
 		public GameScene () : base (CCColor4B.AliceBlue)
 		{
@@ -43,6 +44,8 @@ namespace DroppyBalls.Common
 
 
 			this.generateBall ();
+
+
 
 		}
 

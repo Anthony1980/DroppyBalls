@@ -25,10 +25,7 @@ namespace DroppyBalls.Common
 
 
 		}
-		public bool isPair(int ballTrack, int barTrack){
 
-			return true;
-		}
 		public static GameManager Share {
 			get {
 				if (instance == null) {

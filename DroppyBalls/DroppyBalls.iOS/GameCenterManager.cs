@@ -2,13 +2,14 @@ using System;
 using Foundation;
 using GameKit;
 using UIKit;
+using CocosSharp;
 
-namespace MTGKTapper
+namespace DroppyBalls.Common
 {
 	public class GameCenterManager
 	{
 		NSMutableDictionary earnedAchievementCache;
-
+		string currentCategory = "matchingballs";
 		public static bool IsGameCenterAvailable ()
 		{
 			return UIDevice.CurrentDevice.CheckSystemVersion (4, 1);
@@ -25,9 +26,6 @@ namespace MTGKTapper
 
 		public void ReportScore (long score, string category)
 		{
-			
-
-
 			var scoreReporter = new GKScore (category) {
 				Value = score
 			};
@@ -37,7 +35,7 @@ namespace MTGKTapper
 				else
 					ShowAlert("Score Reported Failed", "Score Reported Failed");
 				NSThread.SleepFor (1);
-				//controller.UpdateHighScore ();
+
 			});
 		}
 
@@ -97,6 +95,19 @@ namespace MTGKTapper
 		{
 			var alert = new UIAlertView (title, msg, null, "OK", null);
 			alert.Show ();
+		}
+
+		public void showLeaderBoard(){
+
+			var leaderboardController = new GKLeaderboardViewController ();
+			leaderboardController.Category = currentCategory;
+			leaderboardController.TimeScope = GKLeaderboardTimeScope.AllTime;
+			leaderboardController.DidFinish += (senderLeaderboard, eLeaderboard) => leaderboardController.DismissViewController (true, null);
+
+			var window = UIApplication.SharedApplication.KeyWindow;
+			var vc = window.RootViewController;
+			 
+			vc.PresentViewController (leaderboardController, true, null);
 		}
 	}
 }

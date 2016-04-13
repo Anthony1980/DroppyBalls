@@ -41,6 +41,14 @@
 	-r \
 	/Projects/DroppyBalls/packages/CocosSharp.1.7.1.0/lib/Xamarin.iOS10/MonoGame.Framework.Net.dll \
 	-r \
+	/Projects/DroppyBalls/packages/Xamarin.Forms.2.1.0.6529/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	-r \
+	/Projects/DroppyBalls/packages/Xamarin.Forms.2.1.0.6529/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	-r \
+	/Projects/DroppyBalls/packages/Xamarin.Forms.2.1.0.6529/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	-r \
+	/Projects/DroppyBalls/packages/Xamarin.Forms.2.1.0.6529/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	-r \
 	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll \
 	-r \
 	/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/DroppyBalls.Common.dll \
@@ -149,11 +157,15 @@
 	-r \
 	/Projects/DroppyBalls/packages/CocosSharp.1.7.1.0/lib/Xamarin.iOS10/MonoGame.Framework.Net.dll \
 	-r \
+	/Projects/DroppyBalls/packages/Xamarin.Forms.2.1.0.6529/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll \
+	-r \
+	/Projects/DroppyBalls/packages/Xamarin.Forms.2.1.0.6529/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll \
+	-r \
+	/Projects/DroppyBalls/packages/Xamarin.Forms.2.1.0.6529/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll \
+	-r \
+	/Projects/DroppyBalls/packages/Xamarin.Forms.2.1.0.6529/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll \
+	-r \
 	/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/DroppyBalls.Common.dll \
-	-r \
-	/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/Foundation.dll \
-	-r \
-	/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/SharpSwift.Attributes.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
 	/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhoneSimulator/Debug//DroppyBalls.iOS.exe \

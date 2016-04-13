@@ -34,3 +34,6 @@
 /Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/DroppyBalls.Common.dll
 /Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/obj/Debug/DroppyBalls.Common.dll
 /Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/obj/Debug/DroppyBalls.Common.dll.mdb
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/Xamarin.Forms.Core.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/Xamarin.Forms.Xaml.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/Xamarin.Forms.Platform.dll
