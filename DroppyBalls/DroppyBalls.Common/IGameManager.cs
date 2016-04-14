@@ -13,6 +13,6 @@ namespace DroppyBalls.Common
 		long GetScore ();
 		void SetScore (long score);
 
-
+		void Rating ();
 	}
 }

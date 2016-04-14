@@ -165,7 +165,7 @@ namespace DroppyBalls.Common
 			GameView.RunWithScene (gameScene);
 		}
 		void btnStarClicked(object sender){
-
+			CMGameManager.Share.Rating ();
 		}
 		void btnRankClicked(object sender){
 			CMGameCenterManager.Share.ShowLeaderBoard ();

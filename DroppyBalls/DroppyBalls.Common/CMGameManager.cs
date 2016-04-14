@@ -56,5 +56,9 @@ namespace DroppyBalls.Common
 			DependencyService.Get<IGameManager> ().SetScore (score);
 		}
 
+		public void Rating(){
+
+			DependencyService.Get<IGameManager> ().Rating ();
+		}
 	}
 }

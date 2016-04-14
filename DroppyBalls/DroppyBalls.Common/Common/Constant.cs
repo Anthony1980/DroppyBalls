@@ -11,6 +11,7 @@ namespace DroppyBalls.Common
 		public const String kBestScore = "bestScore";
 		public const String kScore = "kScore";
 
+		public const String itunesLink = "https://itunes.apple.com/us/app/apple-store/id1102714929?mt=8";
 		public const string kLeaderboard = "matchingballs";
 
 		//resources path

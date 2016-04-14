@@ -1,5 +1,6 @@
 ﻿using System;
 using Foundation;
+using UIKit;
 using DroppyBalls.Common;
 using DroppyBalls.iOS;
 [assembly: Xamarin.Forms.Dependency(typeof (GameManager))]
@@ -31,6 +32,10 @@ namespace DroppyBalls.iOS
 			NSUserDefaults.StandardUserDefaults.SetInt ((int)score, Constant.kScore);
 			NSUserDefaults.StandardUserDefaults.Synchronize ();
 
+		}
+		public void Rating(){
+
+			UIApplication.SharedApplication.OpenUrl (new NSUrl (Constant.itunesLink));
 		}
 	}
 }
