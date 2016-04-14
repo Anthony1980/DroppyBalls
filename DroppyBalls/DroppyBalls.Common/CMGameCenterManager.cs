@@ -17,6 +17,7 @@ namespace DroppyBalls.Common
 
 			get {
 				if (instance == null) {
+					
 					instance = new CMGameCenterManager ();
 				}
 				return instance;

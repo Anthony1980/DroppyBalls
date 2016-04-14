@@ -20,6 +20,7 @@ namespace DroppyBalls.iOS
 
 		public ViewController (IntPtr handle) : base (handle)
 		{
+			Xamarin.Forms.Forms.Init ();
 		}
 
 		public override void ViewDidLoad ()

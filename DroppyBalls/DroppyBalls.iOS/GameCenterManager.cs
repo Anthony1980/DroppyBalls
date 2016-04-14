@@ -34,10 +34,10 @@ namespace DroppyBalls.iOS
 				Value = score
 			};
 			scoreReporter.ReportScore (error => {
-				if (error == null)
-					ShowAlert("Score reported", "Score Reported successfully");
-				else
-					ShowAlert("Score Reported Failed", "Score Reported Failed");
+//				if (error == null)
+//					ShowAlert("Score reported", "Score Reported successfully");
+//				else
+//					ShowAlert("Score Reported Failed", "Score Reported Failed");
 				NSThread.SleepFor (1);
 
 			});

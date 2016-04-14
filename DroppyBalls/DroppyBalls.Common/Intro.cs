@@ -6,10 +6,11 @@ namespace DroppyBalls.Common
 {
 	public class Intro : CCLayerColor
 	{
-		CCSprite btnPlay;
-		CCSprite btnStar;
-		CCSprite btnAds;
-		CCSprite btnRank;
+
+
+
+
+
 		public bool isGameOver;
 		public Intro (bool isGameOver) : base (CCColor4B.AliceBlue)
 		{
@@ -32,7 +33,7 @@ namespace DroppyBalls.Common
 			AddChild (title2);
 
 			if (!this.isGameOver) {
-				var str_score = String.Format ("{0}{1}", Constant.scoreTitle,GameManager.Share.score);
+				var str_score = String.Format ("{0}{1}", Constant.scoreTitle,CMGameManager.Share.GetScore());
 				var lblScore = new CCLabel (str_score, "Arial", Constant.scoreFontSize) {
 
 					Color = new CCColor3B(180,180,180),
@@ -44,7 +45,7 @@ namespace DroppyBalls.Common
 				lblScore.PositionX = Constant.winSizeX / 2;
 				lblScore.PositionY = title2.PositionY - 70;
 
-				var str_bestScore =  String.Format ("{0}{1}", Constant.bestScoreTitle, GameManager.Share.bestScore);
+				var str_bestScore =  String.Format ("{0}{1}", Constant.bestScoreTitle, CMGameManager.Share.GetBestScore());
 				var lblBestScore = new CCLabel (str_bestScore, "Arial", Constant.scoreFontSize) {
 
 					Color = new CCColor3B(180,180,180),
@@ -70,7 +71,7 @@ namespace DroppyBalls.Common
 				};
 				node_score.AddChild (titleScore);
 
-				var str_score = String.Format ("{0}", GameManager.Share.score);
+				var str_score = String.Format ("{0}", CMGameManager.Share.GetScore());
 				var score = new CCLabel (str_score, "Arial-bold", Constant.scoreGameOverFontSize){
 					Color = new CCColor3B(180,180,180),
 					HorizontalAlignment = CCTextAlignment.Center,
@@ -98,7 +99,7 @@ namespace DroppyBalls.Common
 				};
 				node_highScore.AddChild (titleHighScore);
 
-				var str_high_score = String.Format ("{0}", GameManager.Share.bestScore);
+				var str_high_score = String.Format ("{0}", CMGameManager.Share.GetBestScore());
 				var highScore = new CCLabel (str_high_score, "Arial-bold", Constant.scoreGameOverFontSize){
 					Color = new CCColor3B(180,180,180),
 					HorizontalAlignment = CCTextAlignment.Center,
@@ -115,30 +116,67 @@ namespace DroppyBalls.Common
 				CCMoveTo mt2 = new CCMoveTo (0.45f,new CCPoint (Constant.winSizeX * 3 / 4, title2.PositionY - 70));
 				node_highScore.RunAction (mt2);
 
+
+
+
+				CCCallFunc func = new CCCallFunc (ReportScore);
+				this.RunAction (new CCSequence (new CCDelayTime (1), func));
+
 			}
 
-			this.btnPlay = new CCSprite (Constant.btn_start);
-			this.btnStar = new CCSprite (Constant.btn_star);
-			this.btnAds = new CCSprite (Constant.btn_ads);
-			this.btnRank = new CCSprite (Constant.btn_rank);
-			AddChild (btnPlay);
-			AddChild (btnAds);
-			AddChild (btnRank);
-			AddChild (btnStar);
 
-			btnPlay.PositionX = Constant.winSizeX / 2;
-			btnStar.PositionX = Constant.winSizeX / 2;
-			btnAds.PositionX = Constant.winSizeX / 4;
-			btnRank.PositionX = Constant.winSizeX * 3 / 4;
 
-			btnPlay.PositionY = title2.PositionY - 180;
-			btnAds.PositionY = btnPlay.PositionY - 60;
-			btnRank.PositionY = btnAds.PositionY;
-			btnStar.PositionY = btnAds.PositionY - 60;
+			CMGameCenterManager.Share.SetAuthenticateHandle ();
 
+
+			var btnPlay = new CCMenuItemImage (new CCSprite (Constant.btn_start), new CCSprite (Constant.btn_start), btnPlayClicked);
+			CCMenu menuPlay = new CCMenu (btnPlay);
+			AddChild (menuPlay);
+			menuPlay.PositionX = Constant.winSizeX / 2;
+			menuPlay.PositionY = title2.PositionY - 180;
+
+
+			var btnAds = new CCMenuItemImage (new CCSprite (Constant.btn_ads), new CCSprite (Constant.btn_ads), btnAdsClicked);
+			CCMenu menuAds = new CCMenu (btnAds);
+			AddChild (menuAds);
+			menuAds.PositionX = Constant.winSizeX / 4;
+			menuAds.PositionY = menuPlay.PositionY - 60;
+
+
+			var btnStar = new CCMenuItemImage (new CCSprite (Constant.btn_star), new CCSprite (Constant.btn_star), btnStarClicked);
+			CCMenu menuStar = new CCMenu (btnStar);
+			AddChild (menuStar);
+			menuStar.PositionX = Constant.winSizeX / 2;
+			menuStar.PositionY = menuAds.PositionY - 60;
+
+
+
+			var btnRank = new CCMenuItemImage (new CCSprite (Constant.btn_rank), new CCSprite (Constant.btn_rank), btnRankClicked);
+			CCMenu menuRank = new CCMenu (btnRank);
+			AddChild (menuRank);
+			menuRank.PositionX = Constant.winSizeX*3/4;
+			menuRank.PositionY = menuAds.PositionY;
 
 
 		}
+		void btnPlayClicked(object sender){
+			CCScene gameScene = new CCScene (GameView);
+			gameScene.AddLayer (new GameScene ());
+			GameView.RunWithScene (gameScene);
+		}
+		void btnStarClicked(object sender){
+
+		}
+		void btnRankClicked(object sender){
+			CMGameCenterManager.Share.ShowLeaderBoard ();
+		}
+		void btnAdsClicked(object sender){
+
+		}
+
+
+
+
 
 		protected override void AddedToScene ()
 		{
@@ -161,15 +199,12 @@ namespace DroppyBalls.Common
 			if (touches.Count > 0) {
 				// Perform touch handling here
 				var locationOnScreen = touches [0].Location;
-				if (this.btnPlay.BoundingBox.ContainsPoint(locationOnScreen) == true) {
 
-					CCScene gameScene = new CCScene (GameView);
-					gameScene.AddLayer (new GameScene ());
-					GameView.RunWithScene (gameScene);
-				}
 			}
 		}
 
-
+		void ReportScore(){
+			CMGameCenterManager.Share.ReportScore (CMGameManager.Share.bestScore, Constant.kLeaderboard);
+		}
 	}
 }

@@ -11,6 +11,9 @@ Resource.designer.cs
 *.suo
 *.user
 *.sln.docstates
+*.dll
+*.exe
+*.mdb
 
 # Build results
 [Dd]ebug/

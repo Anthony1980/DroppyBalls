@@ -9,6 +9,9 @@ namespace DroppyBalls.Common
 
 		//store key
 		public const String kBestScore = "bestScore";
+		public const String kScore = "kScore";
+
+		public const string kLeaderboard = "matchingballs";
 
 		//resources path
 		public const String redBall = "Images/ball_red.png";

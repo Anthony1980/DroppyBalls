@@ -25,7 +25,7 @@ namespace DroppyBalls.Common
 
 			// Make any renderable node objects (e.g. sprites) children of this layer
 
-			GameManager.Share.score = 0;
+			CMGameManager.Share.score = 0;
 
 			lblScore = new CCLabel ("0", "Arial-bold", Constant.scoreGameFontSize) {
 
@@ -45,7 +45,7 @@ namespace DroppyBalls.Common
 
 			this.generateBall ();
 
-			CMGameCenterManager.Share.SetAuthenticateHandle ();
+
 
 		}
 
@@ -126,6 +126,7 @@ namespace DroppyBalls.Common
 					this.bar.tapLeft ();
 				}
 
+
 			}
 		}
 
@@ -136,27 +137,30 @@ namespace DroppyBalls.Common
 
 			BallType typeOfTrack = this.bar.ballTypeOfTrack (ball.track);
 			if (typeOfTrack == ball.type) {
-				GameManager.Share.score += 1;
+				CMGameManager.Share.score += 1;
 
-				this.lblScore.Text = GameManager.Share.score.ToString();
+				this.lblScore.Text = CMGameManager.Share.score.ToString();
 			} else {
 				//game over
-				if (GameManager.Share.score > GameManager.Share.bestScore) {
-					GameManager.Share.bestScore = GameManager.Share.score;
+				if (CMGameManager.Share.score > CMGameManager.Share.bestScore) {
+					CMGameManager.Share.bestScore = CMGameManager.Share.score;
 
-
+					CMGameManager.Share.SetBestScore (CMGameManager.Share.bestScore);
+					CMGameManager.Share.SetScore (CMGameManager.Share.score);
+				
+				} else {
+					CMGameManager.Share.SetScore (CMGameManager.Share.score);
+				}
 
 			
-//					NSUserDefaults.StandardUserDefaults ().SetInteger (GameManager.Share.score, Constant.kBestScore);  
-//					NSUserDefaults.StandardUserDefaults().Synchronize ();
-
-				
-				}
 				this.gameOver();
+
 			}
 
 
 			ball.RemoveFromParent ();
 		}
+
+
 	}
 }
