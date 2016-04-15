@@ -16,11 +16,11 @@ namespace DroppyBalls.Common
 
 		//resources path
 		public const String redBall = "Images/ball_red.png";
-		public const String blueBall = "Images/ball_blue.png";
+		public const String orangeBall = "Images/ball_orange.png";
 		public const String greenBall = "Images/ball_green.png";
 		public const String yellowBall = "Images/ball_yellow.png";
 		public const String block_red = "Images/block_red.png";
-		public const String block_blue = "Images/block_blue.png";
+		public const String block_orange = "Images/block_orange.png";
 		public const String block_green = "Images/block_green.png";
 		public const String block_yellow = "Images/block_yellow.png";
 

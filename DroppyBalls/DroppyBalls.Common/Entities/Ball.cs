@@ -39,7 +39,7 @@ namespace DroppyBalls.Common
 				ballName = Constant.redBall;
 				break;
 			case BallType.blue:
-				ballName = Constant.blueBall;
+				ballName = Constant.orangeBall;
 				break;
 			case BallType.green:
 				ballName = Constant.greenBall;
