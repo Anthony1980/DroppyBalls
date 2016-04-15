@@ -149,12 +149,12 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.1.0.6529\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.1.0.6529\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
   <ItemGroup>
-    <BundleResource Include="Content\Images\ball_blue.png" />
     <BundleResource Include="Content\Images\ball_green.png" />
+    <BundleResource Include="Content\Images\ball_orange.png" />
     <BundleResource Include="Content\Images\ball_red.png" />
     <BundleResource Include="Content\Images\ball_yellow.png" />
-    <BundleResource Include="Content\Images\block_blue.png" />
     <BundleResource Include="Content\Images\block_green.png" />
+    <BundleResource Include="Content\Images\block_orange.png" />
     <BundleResource Include="Content\Images\block_red.png" />
     <BundleResource Include="Content\Images\block_yellow.png" />
     <BundleResource Include="Content\Images\button_ads.png" />
