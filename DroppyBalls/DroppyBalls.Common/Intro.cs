@@ -25,7 +25,7 @@ namespace DroppyBalls.Common
 				AnchorPoint = CCPoint.AnchorMiddle
 			};
 			AddChild (title1);
-			title1.PositionY = Constant.winSizeY - title1.ContentSize.Height;
+			title1.PositionY = Constant.winSizeY - title1.ContentSize.Height/2;
 			var title2 = new CCSprite (Constant.title_ball) {
 				PositionX = Constant.winSizeX/2,
 				PositionY = title1.PositionY - title1.ContentSize.Height/2
@@ -43,7 +43,7 @@ namespace DroppyBalls.Common
 				};
 				AddChild (lblScore);
 				lblScore.PositionX = Constant.winSizeX / 2;
-				lblScore.PositionY = title2.PositionY - 70;
+				lblScore.PositionY = title2.PositionY - 120;
 
 				var str_bestScore =  String.Format ("{0}{1}", Constant.bestScoreTitle, CMGameManager.Share.GetBestScore());
 				var lblBestScore = new CCLabel (str_bestScore, "Arial", Constant.scoreFontSize) {
@@ -82,9 +82,9 @@ namespace DroppyBalls.Common
 				score.PositionY = -40;
 				AddChild (node_score);
 				node_score.PositionX = -Constant.winSizeX / 4;
-				node_score.PositionY = title2.PositionY - 70;
+				node_score.PositionY = title2.PositionY - 120;
 
-				CCMoveTo mt1 = new CCMoveTo(0.45f,new CCPoint(Constant.winSizeX / 4,title2.PositionY - 70));
+				CCMoveTo mt1 = new CCMoveTo(0.45f,new CCPoint(Constant.winSizeX / 4,title2.PositionY - 120));
 				node_score.RunAction (mt1);
 
 
@@ -111,9 +111,9 @@ namespace DroppyBalls.Common
 
 				AddChild (node_highScore);
 				node_highScore.PositionX = Constant.winSizeX * 5/ 4;
-				node_highScore.PositionY = title2.PositionY - 70;
+				node_highScore.PositionY = title2.PositionY - 120;
 
-				CCMoveTo mt2 = new CCMoveTo (0.45f,new CCPoint (Constant.winSizeX * 3 / 4, title2.PositionY - 70));
+				CCMoveTo mt2 = new CCMoveTo (0.45f,new CCPoint (Constant.winSizeX * 3 / 4, title2.PositionY - 120));
 				node_highScore.RunAction (mt2);
 
 
@@ -133,7 +133,7 @@ namespace DroppyBalls.Common
 			CCMenu menuPlay = new CCMenu (btnPlay);
 			AddChild (menuPlay);
 			menuPlay.PositionX = Constant.winSizeX / 2;
-			menuPlay.PositionY = title2.PositionY - 180;
+			menuPlay.PositionY = title2.PositionY - 250;
 
 
 			var btnAds = new CCMenuItemImage (new CCSprite (Constant.btn_ads), new CCSprite (Constant.btn_ads), btnAdsClicked);
