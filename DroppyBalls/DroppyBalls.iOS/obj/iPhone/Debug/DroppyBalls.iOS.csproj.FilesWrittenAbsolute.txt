@@ -36,3 +36,9 @@
 /Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhone/Debug/DroppyBalls.Common.dll.mdb
 /Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhone/Debug/Foundation.dll
 /Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhone/Debug/SharpSwift.Attributes.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhone/Debug/optimized/Content/Images/ball_orange.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhone/Debug/optimized/Content/Images/block_orange.png
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhone/Debug/Xamarin.Forms.Platform.iOS.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhone/Debug/Xamarin.Forms.Core.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhone/Debug/Xamarin.Forms.Xaml.dll
+/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhone/Debug/Xamarin.Forms.Platform.dll

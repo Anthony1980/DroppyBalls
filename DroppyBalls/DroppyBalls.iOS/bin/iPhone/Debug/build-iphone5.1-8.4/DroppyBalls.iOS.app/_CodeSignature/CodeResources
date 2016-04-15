@@ -10,23 +10,31 @@
 		</data>
 		<key>.monotouch-32/DroppyBalls.Common.dll</key>
 		<data>
-		AvzBJtCuAndIYSuqXtflYqf6PhM=
+		vzuTe2em66euxxM8LV4FKsc6KsE=
 		</data>
 		<key>.monotouch-32/DroppyBalls.Common.dll.mdb</key>
 		<data>
-		duCuAaDu8E2IzGubQRVnGxXYL/A=
+		w1M9WJO8mt3YeJBSOC3PCuYxhOE=
 		</data>
 		<key>.monotouch-32/DroppyBalls.iOS.exe</key>
 		<data>
-		sgtLoCTI0G0eFAFDSioEHo9nOOw=
+		9oE5h4R7ohhFZcn5HgMPwz3WqZY=
 		</data>
 		<key>.monotouch-32/DroppyBalls.iOS.exe.mdb</key>
 		<data>
-		STgpiH7QQvfWCSR1QLI34Q5TNx0=
+		icBSNMph9DmIfNkwWVuILCf5Nj0=
 		</data>
 		<key>.monotouch-32/Foundation.dll</key>
 		<data>
 		4lJ5Hvq4p3GiGxEulZp6jaxmlk4=
+		</data>
+		<key>.monotouch-32/Mono.Dynamic.Interpreter.dll</key>
+		<data>
+		p464hzaZZv+M8i24ge6yQ4MoFPI=
+		</data>
+		<key>.monotouch-32/Mono.Dynamic.Interpreter.dll.mdb</key>
+		<data>
+		+YbP6L2Hnuw8fa4PxGrUvYXNS98=
 		</data>
 		<key>.monotouch-32/MonoGame.Framework.dll</key>
 		<data>
@@ -34,7 +42,7 @@
 		</data>
 		<key>.monotouch-32/OpenTK-1.0.dll</key>
 		<data>
-		g7PWdM2D9Pf7ltJElMQa4ofkdSM=
+		VHkTrvWwWxHTXK2/ZB/3XaUU5Z8=
 		</data>
 		<key>.monotouch-32/OpenTK-1.0.dll.config</key>
 		<data>
@@ -46,19 +54,27 @@
 		</data>
 		<key>.monotouch-32/System.Core.dll</key>
 		<data>
-		eZfqrd7d9l1sJc9+G3XL7EbktxI=
+		Y3G4lnGjPu2UYKwZqXDq5IK6Xkg=
 		</data>
 		<key>.monotouch-32/System.Core.dll.mdb</key>
 		<data>
-		uGPk+52VDufBBE60oyy8DcxVMJg=
+		hr9yV3JjLlu69pqJVpg0CDcdo1k=
+		</data>
+		<key>.monotouch-32/System.Net.Http.dll</key>
+		<data>
+		P/PFxebiJKpUYS3bwTcM4NmPYgI=
+		</data>
+		<key>.monotouch-32/System.Net.Http.dll.mdb</key>
+		<data>
+		qE2O+2zEuVgPspTCAPKykorAIPE=
 		</data>
 		<key>.monotouch-32/System.Runtime.Serialization.dll</key>
 		<data>
-		vbDjYvzMlzZ8BuFYD02v5hrHxck=
+		rBR0KsmBUWrc+7jDmXWuqBlqUOs=
 		</data>
 		<key>.monotouch-32/System.Runtime.Serialization.dll.mdb</key>
 		<data>
-		YgpfF3Rw5dxTK0Z1JJ79Iuw44bA=
+		If0EUrdiniPS/nrnOSNYlB2aF6o=
 		</data>
 		<key>.monotouch-32/System.ServiceModel.Internals.dll</key>
 		<data>
@@ -70,35 +86,47 @@
 		</data>
 		<key>.monotouch-32/System.Xml.dll</key>
 		<data>
-		I2p2HgzAqGsPSxwdunYFf/1weuA=
+		38Trxi/Na1jB9Qjxw9SL+czEUrY=
 		</data>
 		<key>.monotouch-32/System.Xml.dll.mdb</key>
 		<data>
-		sjhzx7qhNAFDEHtceJ9Rve2hp1c=
+		6IyHJMdmIVzVXlmxDqEj7BOwTOM=
 		</data>
 		<key>.monotouch-32/System.dll</key>
 		<data>
-		BkjhygHh1XvU6wQApRegraPpDno=
+		ozCL4oqclBzSrNw7LPRszzaZIa8=
 		</data>
 		<key>.monotouch-32/System.dll.mdb</key>
 		<data>
-		vw718yzT5F9QzM8W0ELGC0TjMSo=
+		uzc+RHMqNNsBdz28aq7HrLlHkMo=
+		</data>
+		<key>.monotouch-32/Xamarin.Forms.Core.dll</key>
+		<data>
+		yOD424OykmUjmc8dqbozlVz3bgE=
+		</data>
+		<key>.monotouch-32/Xamarin.Forms.Platform.dll</key>
+		<data>
+		gm/yxS7ms+1nfl0wXBn1Zfl0Dl4=
+		</data>
+		<key>.monotouch-32/Xamarin.Forms.Platform.iOS.dll</key>
+		<data>
+		IbO8nknsl4ZvUBfewZNGo9rFUbA=
 		</data>
 		<key>.monotouch-32/Xamarin.iOS.dll</key>
 		<data>
-		QMjjvV+QVoi22DWdIE9TkcMKDsk=
+		HRTAf+v0yb6RNquFRkz2QtHdolQ=
 		</data>
 		<key>.monotouch-32/Xamarin.iOS.dll.mdb</key>
 		<data>
-		0NG9O/xWBb/c9fFL6HKQGc0Oep4=
+		dq3JL1okfUIeCZLebSjK5cLxgHo=
 		</data>
 		<key>.monotouch-32/mscorlib.dll</key>
 		<data>
-		QkiKns/FO3iIJknifPqjG0FZK7E=
+		1cB6Xi7xXsTQg7jerJP/YcpKE/s=
 		</data>
 		<key>.monotouch-32/mscorlib.dll.mdb</key>
 		<data>
-		6/d0GcRQZnIWy8NCaqqsuoJ8ZnA=
+		FvjOd9FZegd8cRWtAofGzai69x8=
 		</data>
 		<key>Content/Images/ball_blue.png</key>
 		<data>
@@ -106,15 +134,19 @@
 		</data>
 		<key>Content/Images/ball_green.png</key>
 		<data>
-		txr2YDooIQaeiNntJ7rAOEz83X4=
+		msRudBQSFo3GgPLsbflqnVFIXbI=
+		</data>
+		<key>Content/Images/ball_orange.png</key>
+		<data>
+		/4OfApT+H90ybJN7pP/46Ox5nrY=
 		</data>
 		<key>Content/Images/ball_red.png</key>
 		<data>
-		U3kSq86RNycMaoXmvyfB6HZKYLk=
+		XoOUQAvebyIYbHx3F6VEXiSKg8U=
 		</data>
 		<key>Content/Images/ball_yellow.png</key>
 		<data>
-		g8W2Ubwtrm7644zMwgOChsTwLdM=
+		3s9q6y5JKVGeNHr2WNsUFP/Cy+w=
 		</data>
 		<key>Content/Images/block_blue.png</key>
 		<data>
@@ -122,43 +154,47 @@
 		</data>
 		<key>Content/Images/block_green.png</key>
 		<data>
-		G1hpWIwea0py+v2wQe2C1sCMGFA=
+		naa1HYWqeBWrNaO+3oviOxBv4e0=
+		</data>
+		<key>Content/Images/block_orange.png</key>
+		<data>
+		SoGbzB76YeI6ZpMAzHK/Nnm6Otg=
 		</data>
 		<key>Content/Images/block_red.png</key>
 		<data>
-		/xI37Q/T5aMxWswoTZ4KF7cZuU8=
+		fxHLXilChlOJdJp4aE68mlbIr9c=
 		</data>
 		<key>Content/Images/block_yellow.png</key>
 		<data>
-		GJ6hEai2dE4Ffe4VWIc/SE1ZKpI=
+		A3p1OJCZcP2ij+hyPG4T2OLXnf8=
 		</data>
 		<key>Content/Images/button_ads.png</key>
 		<data>
-		Da0b1xkwktmHQ6DlQyPLIL+rFBc=
+		352aqlFKgG3mfB3+Ec0WE3rVv+4=
 		</data>
 		<key>Content/Images/button_rank.png</key>
 		<data>
-		Vz7zLLW+QUoCy1OzxUE70YFP8J0=
+		XkJFrdhbvvW766mRd8NQwfdlxhk=
 		</data>
 		<key>Content/Images/button_star.png</key>
 		<data>
-		Tzc17CE0gVR7WFCR9VxYNvQcrHo=
+		JjwWdqRpk2FkzjxYNm8Zr5h5hRI=
 		</data>
 		<key>Content/Images/button_start.png</key>
 		<data>
-		H233TJcw2Q6i4BSkvv+tejeIdTk=
+		Kgc6B+V9/+TVByqyB6KuGoQPF7E=
 		</data>
 		<key>Content/Images/title_ball.png</key>
 		<data>
-		H+2OqHplzB54aGluHyqUY+2lv+o=
+		SThTpsKT5fNZIMSd3m07b8mB1xs=
 		</data>
 		<key>Content/Images/title_droppy.png</key>
 		<data>
-		vDIXjxxymHA6iGj655Rf3Lv3xX0=
+		4thDB3zmN2NSm5226nbMzX89p1Y=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pSlJgsaBrSH6AKOCi2aHzQvdI88=
+		1gkGcETQtDsPR8V0XW4RKYV36zM=
 		</data>
 		<key>LaunchScreen.nib</key>
 		<data>
@@ -218,44 +254,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			AvzBJtCuAndIYSuqXtflYqf6PhM=
+			vzuTe2em66euxxM8LV4FKsc6KsE=
 			</data>
 			<key>hash2</key>
 			<data>
-			LHyckIMsusdsq07k2bOV8Rc+TXZ2ZdqviFqUvmQxhtA=
+			/bNFr1l+jPHtPCXVH5bhEOTFzYUiVZ6ffcO6YJFiEbw=
 			</data>
 		</dict>
 		<key>.monotouch-32/DroppyBalls.Common.dll.mdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			duCuAaDu8E2IzGubQRVnGxXYL/A=
+			w1M9WJO8mt3YeJBSOC3PCuYxhOE=
 			</data>
 			<key>hash2</key>
 			<data>
-			cKx+HNtY43usD+92AcjmxFvZqxO89Z3JidybMT2cCDo=
+			WZXT7nT1y4HBWAUGyEtHIroW47ds0Er821DeV1j2NXI=
 			</data>
 		</dict>
 		<key>.monotouch-32/DroppyBalls.iOS.exe</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sgtLoCTI0G0eFAFDSioEHo9nOOw=
+			9oE5h4R7ohhFZcn5HgMPwz3WqZY=
 			</data>
 			<key>hash2</key>
 			<data>
-			Puu6N98WzpO0LpxfP627vSwVnV8yG5HdRIAc4SlYAHg=
+			HqqHcZ4pouPEGRJS5xKhBBgr6v1sQ8iw6fTXkZda5so=
 			</data>
 		</dict>
 		<key>.monotouch-32/DroppyBalls.iOS.exe.mdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			STgpiH7QQvfWCSR1QLI34Q5TNx0=
+			icBSNMph9DmIfNkwWVuILCf5Nj0=
 			</data>
 			<key>hash2</key>
 			<data>
-			yeoyQJE/njtEJCQgZS1fIlXJi0X7x1W4TONBaRtajuk=
+			IH3M6w2fQI7PK1VxD1AwknaGkzMiV1Fcn83DIlMaQfs=
 			</data>
 		</dict>
 		<key>.monotouch-32/Foundation.dll</key>
@@ -267,6 +303,28 @@
 			<key>hash2</key>
 			<data>
 			Of3q98dYCjeuvfLYvkcS6ws0cQJOwIKmRl7T+gQqhX0=
+			</data>
+		</dict>
+		<key>.monotouch-32/Mono.Dynamic.Interpreter.dll</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			p464hzaZZv+M8i24ge6yQ4MoFPI=
+			</data>
+			<key>hash2</key>
+			<data>
+			YlMXAoNfS33lhfdSInRaZsoAaorRKUX3+Kl89K884B0=
+			</data>
+		</dict>
+		<key>.monotouch-32/Mono.Dynamic.Interpreter.dll.mdb</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+YbP6L2Hnuw8fa4PxGrUvYXNS98=
+			</data>
+			<key>hash2</key>
+			<data>
+			NaXMXkL8OiOymP7NPzAUaQIYj7cBucbCXO5zVv5XqB8=
 			</data>
 		</dict>
 		<key>.monotouch-32/MonoGame.Framework.dll</key>
@@ -284,11 +342,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			g7PWdM2D9Pf7ltJElMQa4ofkdSM=
+			VHkTrvWwWxHTXK2/ZB/3XaUU5Z8=
 			</data>
 			<key>hash2</key>
 			<data>
-			3hulXx/CqsKEB5rHTZe4mAhjpyZnfudgJWn7khixqsY=
+			6V0WKJblEhd++KFsyeG+rGsK8PvGdDtiSUkW3ICwgDY=
 			</data>
 		</dict>
 		<key>.monotouch-32/OpenTK-1.0.dll.config</key>
@@ -317,44 +375,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eZfqrd7d9l1sJc9+G3XL7EbktxI=
+			Y3G4lnGjPu2UYKwZqXDq5IK6Xkg=
 			</data>
 			<key>hash2</key>
 			<data>
-			wRkMMGjcQrTTXXBLtmR7bO4jgWHFLLSiga39OsdeHL0=
+			Y/j4+enBDscSvnHuOpxLlbGhGvJ9V4Mc+GxjCQNQ4Oc=
 			</data>
 		</dict>
 		<key>.monotouch-32/System.Core.dll.mdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uGPk+52VDufBBE60oyy8DcxVMJg=
+			hr9yV3JjLlu69pqJVpg0CDcdo1k=
 			</data>
 			<key>hash2</key>
 			<data>
-			tllolgkVmJrib5h5DRVdvfJPsu+ljkDitBWtz7jtPo0=
+			mpW8SidwfvtrqB+xD/Uj0ZtixamFcwl33vsCw4aMT0g=
+			</data>
+		</dict>
+		<key>.monotouch-32/System.Net.Http.dll</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P/PFxebiJKpUYS3bwTcM4NmPYgI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Dg54jCDd3IY8f/hUy7WCA76/vy/XMmmJc5U0TcuqnHg=
+			</data>
+		</dict>
+		<key>.monotouch-32/System.Net.Http.dll.mdb</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			qE2O+2zEuVgPspTCAPKykorAIPE=
+			</data>
+			<key>hash2</key>
+			<data>
+			MrskwrQLv7p6xlgxW26pTv9ScVSdNYx5OU8iJ5en7no=
 			</data>
 		</dict>
 		<key>.monotouch-32/System.Runtime.Serialization.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vbDjYvzMlzZ8BuFYD02v5hrHxck=
+			rBR0KsmBUWrc+7jDmXWuqBlqUOs=
 			</data>
 			<key>hash2</key>
 			<data>
-			aXxCfXT/yTVUCV6Wcn2KmizvVcEkQqNj8c0NgUEgysA=
+			yJJtiovMaop9psj6tQ8KMVZHOBtYDcRtHyZOJVi7R8o=
 			</data>
 		</dict>
 		<key>.monotouch-32/System.Runtime.Serialization.dll.mdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			YgpfF3Rw5dxTK0Z1JJ79Iuw44bA=
+			If0EUrdiniPS/nrnOSNYlB2aF6o=
 			</data>
 			<key>hash2</key>
 			<data>
-			NR94sQD1xWXK9DBKFgp6ZIFc/4pU+eA2yfNyB2LtbRo=
+			ZZv1z1Od5BZOWRZXFCRAQRkyZd/3LncFoHQ5vOb2DNA=
 			</data>
 		</dict>
 		<key>.monotouch-32/System.ServiceModel.Internals.dll</key>
@@ -383,88 +463,121 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			I2p2HgzAqGsPSxwdunYFf/1weuA=
+			38Trxi/Na1jB9Qjxw9SL+czEUrY=
 			</data>
 			<key>hash2</key>
 			<data>
-			NJcbJDa8HvbGfNrLJfCM33Al39DtAS3ErQ+rA2B0d7g=
+			wsUgvlKF3+LtoPzfdHZY77fGY77ydaxWY5PRm0Lhh64=
 			</data>
 		</dict>
 		<key>.monotouch-32/System.Xml.dll.mdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sjhzx7qhNAFDEHtceJ9Rve2hp1c=
+			6IyHJMdmIVzVXlmxDqEj7BOwTOM=
 			</data>
 			<key>hash2</key>
 			<data>
-			q53dR46MNyEqwFWDIOvnEXvWopZZqT7BKY7igTsQJ0Q=
+			3dEZG0ANuJ2AAB8R5lrShMZ8Cs7qJpV0vWooch1T4YY=
 			</data>
 		</dict>
 		<key>.monotouch-32/System.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			BkjhygHh1XvU6wQApRegraPpDno=
+			ozCL4oqclBzSrNw7LPRszzaZIa8=
 			</data>
 			<key>hash2</key>
 			<data>
-			fdDed4fmXU9NIcRNPapQvn1OwSXK9dJSg0LNCTT6YOk=
+			NwwEhQ+rpRI4MjgbEtqrq/7XBaJXAV0ZIdKNPPf9e2E=
 			</data>
 		</dict>
 		<key>.monotouch-32/System.dll.mdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vw718yzT5F9QzM8W0ELGC0TjMSo=
+			uzc+RHMqNNsBdz28aq7HrLlHkMo=
 			</data>
 			<key>hash2</key>
 			<data>
-			4m6+g+IiyFc/ZJcAZj3j0xxMhHwm9IsVFicAfdabmDM=
+			GYfqrO+FuhtoCkxbUW1ixrRGuojF+yjcoOevbK+dMaA=
+			</data>
+		</dict>
+		<key>.monotouch-32/Xamarin.Forms.Core.dll</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			yOD424OykmUjmc8dqbozlVz3bgE=
+			</data>
+			<key>hash2</key>
+			<data>
+			dxDaQjPSAEJGUjnqKPAqwN5fZ69+/RaVXTFPaUJERGo=
+			</data>
+		</dict>
+		<key>.monotouch-32/Xamarin.Forms.Platform.dll</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gm/yxS7ms+1nfl0wXBn1Zfl0Dl4=
+			</data>
+			<key>hash2</key>
+			<data>
+			uA1AHcJTqjO/ra1666+b1X4HrAHDDlAyl+fINl4DBRg=
+			</data>
+		</dict>
+		<key>.monotouch-32/Xamarin.Forms.Platform.iOS.dll</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			IbO8nknsl4ZvUBfewZNGo9rFUbA=
+			</data>
+			<key>hash2</key>
+			<data>
+			7Tl2IibfEY7Qa/Y3Q2yEdiMhee5oANAaeBVhTIW2gyk=
 			</data>
 		</dict>
 		<key>.monotouch-32/Xamarin.iOS.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QMjjvV+QVoi22DWdIE9TkcMKDsk=
+			HRTAf+v0yb6RNquFRkz2QtHdolQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			5vyZnGsUZgZVQaQVaOLaZf/xfnOCLlcGAFRCysW2qcg=
+			lNJOLy2iH7kt21RPkbc9EmrQSteRr64rLanCS5pEwew=
 			</data>
 		</dict>
 		<key>.monotouch-32/Xamarin.iOS.dll.mdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			0NG9O/xWBb/c9fFL6HKQGc0Oep4=
+			dq3JL1okfUIeCZLebSjK5cLxgHo=
 			</data>
 			<key>hash2</key>
 			<data>
-			p0cdl5JZfVbNr3Wl5i69tuHRSWD5M1X6+k+2tgfXeDg=
+			sS0/KGaRypkhm065BRanRdUWNGG8LI1KYiaW9/uB5K4=
 			</data>
 		</dict>
 		<key>.monotouch-32/mscorlib.dll</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QkiKns/FO3iIJknifPqjG0FZK7E=
+			1cB6Xi7xXsTQg7jerJP/YcpKE/s=
 			</data>
 			<key>hash2</key>
 			<data>
-			uJ+3Eu4myE4Iq/PEFPQkzsYj/cWrxMH6sTiQF3VtgmA=
+			KH7N7XEiqcDjy9ScmWoDd+5VWTiEQU8CqzV/VoPYznE=
 			</data>
 		</dict>
 		<key>.monotouch-32/mscorlib.dll.mdb</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6/d0GcRQZnIWy8NCaqqsuoJ8ZnA=
+			FvjOd9FZegd8cRWtAofGzai69x8=
 			</data>
 			<key>hash2</key>
 			<data>
-			ULvrP417gMuQO2J5/ihbW7WUN7rMYeUO6eyLLlbU5gE=
+			9HoyrvaQJlH62kuIQC7lE20g1buPKAUR2EEW9MJSTNA=
 			</data>
 		</dict>
 		<key>Content/Images/ball_blue.png</key>
@@ -482,33 +595,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			txr2YDooIQaeiNntJ7rAOEz83X4=
+			msRudBQSFo3GgPLsbflqnVFIXbI=
 			</data>
 			<key>hash2</key>
 			<data>
-			iKYXIcOJAG86Nk9jX6YpLYab1mWV2sC/hCANi3HiRSA=
+			RRR7U+/DysFNZRHX7UpIKTCeX8acz/pRvt1Y5bOxpLM=
+			</data>
+		</dict>
+		<key>Content/Images/ball_orange.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/4OfApT+H90ybJN7pP/46Ox5nrY=
+			</data>
+			<key>hash2</key>
+			<data>
+			kK8j8Jc2+PpCUSrTbkn7R0Qf5xmodrcbFeqZpE2Pk48=
 			</data>
 		</dict>
 		<key>Content/Images/ball_red.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			U3kSq86RNycMaoXmvyfB6HZKYLk=
+			XoOUQAvebyIYbHx3F6VEXiSKg8U=
 			</data>
 			<key>hash2</key>
 			<data>
-			ISGQ05bU9LMAhgs7d0JSG6BIjTTk9a/wK7yVTHLU+rM=
+			fG0hU0wWmeNgBribqzQLqWjcIG29EaeX+ZuiuBs5vco=
 			</data>
 		</dict>
 		<key>Content/Images/ball_yellow.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			g8W2Ubwtrm7644zMwgOChsTwLdM=
+			3s9q6y5JKVGeNHr2WNsUFP/Cy+w=
 			</data>
 			<key>hash2</key>
 			<data>
-			TwjuM56ZTntERdbruFcDdXv60YttR/NQ9VuFo0ZG3JQ=
+			dEO5qg6mnW4MGfWYfg7bEX243W0ZKLkqgylU3pfhLEU=
 			</data>
 		</dict>
 		<key>Content/Images/block_blue.png</key>
@@ -526,99 +650,110 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G1hpWIwea0py+v2wQe2C1sCMGFA=
+			naa1HYWqeBWrNaO+3oviOxBv4e0=
 			</data>
 			<key>hash2</key>
 			<data>
-			1yH8FYQQnsD8Ow/vpe6Bc9iSI8blZqc8s3VyPtX+14E=
+			K4jQcMKfItSoWfJPZAri9JN8Dj0LTA7DdHGsGFIq6fg=
+			</data>
+		</dict>
+		<key>Content/Images/block_orange.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			SoGbzB76YeI6ZpMAzHK/Nnm6Otg=
+			</data>
+			<key>hash2</key>
+			<data>
+			6t8GQPnpeKS50X/pIlP2wZP1+Ugg6SYpspq2jVPV9Es=
 			</data>
 		</dict>
 		<key>Content/Images/block_red.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/xI37Q/T5aMxWswoTZ4KF7cZuU8=
+			fxHLXilChlOJdJp4aE68mlbIr9c=
 			</data>
 			<key>hash2</key>
 			<data>
-			wQqII6AMfAQkZgrMYPllKndrv/4h1XHtIJMFQDJwqdY=
+			75yXLbH7pkfW/3wttD6KrYEotGduZ3+ZwFv0zDRUYBE=
 			</data>
 		</dict>
 		<key>Content/Images/block_yellow.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			GJ6hEai2dE4Ffe4VWIc/SE1ZKpI=
+			A3p1OJCZcP2ij+hyPG4T2OLXnf8=
 			</data>
 			<key>hash2</key>
 			<data>
-			a624+JttNyxw+RSmONTbyEHMr1Zhkf/lobaSNSrhltQ=
+			YobDfOTq5GSz3/bnvAZVnwQ7pmVihodPWR4OOKReHjA=
 			</data>
 		</dict>
 		<key>Content/Images/button_ads.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Da0b1xkwktmHQ6DlQyPLIL+rFBc=
+			352aqlFKgG3mfB3+Ec0WE3rVv+4=
 			</data>
 			<key>hash2</key>
 			<data>
-			mVPQivFHhHu+mTLs7FxITFQDu9d5U8heA9KX+yEB2GQ=
+			Ywo2QjaoYRMP5E6wmZ4Vbr9h1vPjh45jc1HPk80icg0=
 			</data>
 		</dict>
 		<key>Content/Images/button_rank.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Vz7zLLW+QUoCy1OzxUE70YFP8J0=
+			XkJFrdhbvvW766mRd8NQwfdlxhk=
 			</data>
 			<key>hash2</key>
 			<data>
-			/YvKHx+DggdFVyd6DQXiwzkLuah2rmvl08CSee7f/dQ=
+			m77dsszGG9hjegriYnip9gj8JAkF3j7/0WceudREtMc=
 			</data>
 		</dict>
 		<key>Content/Images/button_star.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Tzc17CE0gVR7WFCR9VxYNvQcrHo=
+			JjwWdqRpk2FkzjxYNm8Zr5h5hRI=
 			</data>
 			<key>hash2</key>
 			<data>
-			A43La28v+uw9XeYYFsCWBb2RVrAN8EZNxrknxsGDoT0=
+			zUJ9id8e11DlS+c1XWeorJUYempr83y0szUDy09hJS4=
 			</data>
 		</dict>
 		<key>Content/Images/button_start.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H233TJcw2Q6i4BSkvv+tejeIdTk=
+			Kgc6B+V9/+TVByqyB6KuGoQPF7E=
 			</data>
 			<key>hash2</key>
 			<data>
-			YnUeH3cnzClllup1zcMDWkgK1057NqhENaWpF5OeFdQ=
+			s3OoMoP4Q6+MKosxZ0BTnMbvmmhHXGl3AjQtYGvGfwU=
 			</data>
 		</dict>
 		<key>Content/Images/title_ball.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			H+2OqHplzB54aGluHyqUY+2lv+o=
+			SThTpsKT5fNZIMSd3m07b8mB1xs=
 			</data>
 			<key>hash2</key>
 			<data>
-			/9jU3MvqVfpIZkft6EHC0yrjZxMYQR20gb2RnqxeD2k=
+			MCfBumedwSxHset9+wbXQGTdjJkPdnvXS+BGflAvlfw=
 			</data>
 		</dict>
 		<key>Content/Images/title_droppy.png</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vDIXjxxymHA6iGj655Rf3Lv3xX0=
+			4thDB3zmN2NSm5226nbMzX89p1Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			PnWhAbVe9EcXvfPBgZoJTLkFqFyD4Hbd0IHnGli4Mu0=
+			vnwZ3eZcKclvbPyCeuUtoHLTVRoqPD5gzQJ86zRcMHM=
 			</data>
 		</dict>
 		<key>LaunchScreen.nib</key>

@@ -43,7 +43,14 @@ namespace DroppyBalls.Common
 
 		}
 
+		public void AnimMatched(){
 
+			CCFadeTo fo = new CCFadeTo (0.08f, 90);
+			CCFadeTo fi = new CCFadeTo (0.16f, 255);
+
+			this.sprite.RunAction (new CCSequence(fo,fi));
+
+		}
 
 	}
 }

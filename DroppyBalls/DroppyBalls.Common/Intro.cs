@@ -21,16 +21,19 @@ namespace DroppyBalls.Common
 			// Make any renderable node objects (e.g. sprites) children of this layer
 
 			var title1 = new CCSprite(Constant.title_droppy){
-				PositionX = Constant.winSizeX/2,
-				AnchorPoint = CCPoint.AnchorMiddle
+				PositionX = Constant.winSizeX/2.2f,
+
 			};
 			AddChild (title1);
 			title1.PositionY = Constant.winSizeY - title1.ContentSize.Height/2;
+			title1.Scale = 0.85f;
 			var title2 = new CCSprite (Constant.title_ball) {
-				PositionX = Constant.winSizeX/2,
-				PositionY = title1.PositionY - title1.ContentSize.Height/2
+				PositionX = Constant.winSizeX/1.8f,
+				PositionY = title1.PositionY - title1.ContentSize.Height/2,
+
 			};
 			AddChild (title2);
+			title2.Scale = 0.85f;
 
 			if (!this.isGameOver) {
 				var str_score = String.Format ("{0}{1}", Constant.scoreTitle,CMGameManager.Share.GetScore());

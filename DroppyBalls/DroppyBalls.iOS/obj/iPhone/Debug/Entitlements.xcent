@@ -5,7 +5,7 @@
 	<key>get-task-allow</key>
 	<true/>
 	<key>application-identifier</key>
-	<string>43848TJX34.${AppIdentifier}</string>
+	<string>43848TJX34.com.niteco.matchballs</string>
 	<key>com.apple.developer.team-identifier</key>
 	<string>43848TJX34</string>
 </dict>

@@ -77,6 +77,10 @@ namespace DroppyBalls.Common
 			return listCB [track + 2].type;
 
 		}
+		public CatchingBall GetCatchingBallOfTrack(int track){
+
+			return listCB [track + 2];
+		}
 
 	}
 }

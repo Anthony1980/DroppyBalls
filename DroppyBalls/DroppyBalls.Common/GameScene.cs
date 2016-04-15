@@ -93,6 +93,8 @@ namespace DroppyBalls.Common
 			b.PositionY = Constant.winSizeY + b.sprite.BoundingBox.Size.Height;
 
 			b.ballCallBack = this;
+
+
 		}
 
 
@@ -140,7 +142,13 @@ namespace DroppyBalls.Common
 				CMGameManager.Share.score += 1;
 
 				this.lblScore.Text = CMGameManager.Share.score.ToString();
+
+				CatchingBall currentBallTarget = this.bar.GetCatchingBallOfTrack (ball.track);
+				currentBallTarget.AnimMatched ();
+
 			} else {
+
+			
 				//game over
 				if (CMGameManager.Share.score > CMGameManager.Share.bestScore) {
 					CMGameManager.Share.bestScore = CMGameManager.Share.score;

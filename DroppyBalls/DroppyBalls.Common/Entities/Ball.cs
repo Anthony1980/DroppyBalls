@@ -27,6 +27,8 @@ namespace DroppyBalls.Common
 
 		public int track;
 		private bool isRespawned;
+		private bool isMergedAnim;
+		private float defaultScale;
 
 		public Ball (BallType t, int track) :base()
 		{
@@ -55,13 +57,19 @@ namespace DroppyBalls.Common
 			this.sprite = new CCSprite (ballName);
 			this.sprite.AnchorPoint = CCPoint.AnchorMiddle;
 			this.AddChild (this.sprite);
+			this.defaultScale = (Constant.winSizeX/8)*0.7f / this.sprite.BoundingBox.Size.Width;
+			this.sprite.Scale = this.defaultScale;
 
-			this.sprite.Scale = (Constant.winSizeX/8)*0.7f / this.sprite.BoundingBox.Size.Width;
-
-
+			this.isMergedAnim = false;
 			this.isRespawned = false;
 
 			this.Schedule (ApplyVelocity);
+
+
+			CCScaleTo sc1 = new CCScaleTo (0.35f, this.defaultScale * 0.95f, this.defaultScale * 1.05f);
+			CCScaleTo sc2 = new CCScaleTo (0.35f, this.defaultScale * 1.05f, this.defaultScale * 0.95f);
+			CCSequence sq = new CCSequence (sc1, sc2);
+			this.sprite.RunAction (new CCRepeatForever (sq));
 
 			// Load and instantate your assets here
 
@@ -78,12 +86,27 @@ namespace DroppyBalls.Common
 				ballCallBack.NeedRespawn ();
 
 			}
+			float h = this.sprite.BoundingBox.Size.Height * this.defaultScale / 2;
+
+			if ((PositionY < h + Constant.highDestructor)&& !this.isMergedAnim) {
+
+				this.sprite.ScaleY = this.defaultScale*(PositionY - Constant.highDestructor)/h;
+				if(!this.isMergedAnim){
+					this.isMergedAnim = true;
+					this.AnimFadeOut ();
+				}
+			}
 			if (PositionY < Constant.highDestructor) {
 
 				ballCallBack.NeedCheckPair (this);
 
 			}
 		}
+		public void AnimFadeOut(){
+
+			this.sprite.RunAction (new CCFadeOut (0.25f));
+		}
+	
 
 	}
 }
