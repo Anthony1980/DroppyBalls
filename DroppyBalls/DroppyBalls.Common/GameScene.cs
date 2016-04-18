@@ -4,6 +4,7 @@ using CocosSharp;
 using Foundation;
 
 
+
 namespace DroppyBalls.Common
 {
 	public interface IBallCallback
@@ -17,6 +18,7 @@ namespace DroppyBalls.Common
 
 		CatchingBar bar;
 		CCLabel lblScore;
+	
 	
 
 		public GameScene () : base (CCColor4B.AliceBlue)
@@ -46,7 +48,7 @@ namespace DroppyBalls.Common
 			this.generateBall ();
 
 
-
+			CCAudioEngine.SharedEngine.EffectsVolume += .25f;
 		}
 
 
@@ -146,9 +148,12 @@ namespace DroppyBalls.Common
 				CatchingBall currentBallTarget = this.bar.GetCatchingBallOfTrack (ball.track);
 				currentBallTarget.AnimMatched ();
 
+				CCAudioEngine.SharedEngine.PlayEffect ("Sounds/drop_fail");
+		
+
 			} else {
 
-			
+
 				//game over
 				if (CMGameManager.Share.score > CMGameManager.Share.bestScore) {
 					CMGameManager.Share.bestScore = CMGameManager.Share.score;

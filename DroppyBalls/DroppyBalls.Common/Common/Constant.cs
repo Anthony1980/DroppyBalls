@@ -31,6 +31,10 @@ namespace DroppyBalls.Common
 		public const String btn_rank = "Images/button_rank.png";
 		public const String btn_star = "Images/button_star.png";
 		public const String btn_start = "Images/button_start.png";
+
+		public const String se_drop = "Sounds/drop";
+		public const String se_drop_fail = "Sounds/drop_fail";
+
 		public const float winSizeX = 414;
 		public const float winSizeY = 736;
 		public const float scoreFontSize = 36;

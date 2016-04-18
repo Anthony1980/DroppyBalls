@@ -68,7 +68,7 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchFloat32>true</MtouchFloat32>
-    <CodesignKey>iPhone Developer: Quan Nguyen (MM533QG2S7)</CodesignKey>
+    <CodesignKey>iPhone Developer: Tran Duy Bien (2E63VCGF67)</CodesignKey>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchDebug>true</MtouchDebug>
     <MtouchUseSGen>true</MtouchUseSGen>
@@ -76,7 +76,6 @@
     <MtouchProfiling>true</MtouchProfiling>
     <IpaPackageName>
     </IpaPackageName>
-    <CodesignProvision>bdb845bf-eb5b-4401-8e68-67cdefbe4640</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -135,6 +134,8 @@
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
+    <None Include="Content\Sounds\drop_fail.wav" />
+    <None Include="Content\Sounds\drop.wav" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
