@@ -21,7 +21,7 @@ namespace DroppyBalls.Common
 	
 	
 
-		public GameScene () : base (CCColor4B.AliceBlue)
+		public GameScene () : base (CCColor4B.White)
 		{
 			// Load and instantate your assets here
 
@@ -48,7 +48,7 @@ namespace DroppyBalls.Common
 			this.generateBall ();
 
 
-			CCAudioEngine.SharedEngine.EffectsVolume += .25f;
+		
 		}
 
 
@@ -148,12 +148,11 @@ namespace DroppyBalls.Common
 				CatchingBall currentBallTarget = this.bar.GetCatchingBallOfTrack (ball.track);
 				currentBallTarget.AnimMatched ();
 
-				CCAudioEngine.SharedEngine.PlayEffect ("Sounds/drop_fail");
-		
+				CCAudioEngine.SharedEngine.PlayEffect (Constant.se_drop, false);
 
 			} else {
 
-
+				CCAudioEngine.SharedEngine.PlayEffect (Constant.se_drop_fail, false);
 				//game over
 				if (CMGameManager.Share.score > CMGameManager.Share.bestScore) {
 					CMGameManager.Share.bestScore = CMGameManager.Share.score;

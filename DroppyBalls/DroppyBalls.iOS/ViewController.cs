@@ -67,7 +67,7 @@ namespace DroppyBalls.iOS
 				var contentSearchPaths = new List<string> () { "Fonts", "Sounds" };
 				CCSizeI viewSize = gameView.ViewSize;
 
-				gameView.Stats.Enabled = true;
+			//	gameView.Stats.Enabled = true;
 
 				int width = 414;
 				int height = 736;

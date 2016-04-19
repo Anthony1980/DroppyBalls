@@ -73,15 +73,6 @@
     <Reference Include="Foundation.Common">
       <HintPath>..\..\packages\Foundation.Common.1.5.0.0\lib\portable-net45+win+wpa81\Foundation.Common.dll</HintPath>
     </Reference>
-    <Reference Include="SharpSwift.Attributes">
-      <HintPath>..\..\packages\SharpSwift.Attributes.1.1.0\lib\SharpSwift.Attributes.dll</HintPath>
-    </Reference>
-    <Reference Include="Foundation">
-      <HintPath>..\..\packages\CocoaSharp.Foundation.1.0.0\lib\Foundation.dll</HintPath>
-    </Reference>
-    <Reference Include="CoreGraphics">
-      <HintPath>..\..\packages\CocoaSharp.CoreGraphics.0.1.0\lib\CoreGraphics.dll</HintPath>
-    </Reference>
     <Reference Include="ObjectiveC">
       <HintPath>..\..\packages\CocoaSharp.ObjectiveC.1.0.0\lib\ObjectiveC.dll</HintPath>
     </Reference>
@@ -96,6 +87,15 @@
     </Reference>
     <Reference Include="Xamarin.Forms.Platform">
       <HintPath>..\..\packages\Xamarin.Forms.2.1.0.6529\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="CoreGraphics">
+      <HintPath>..\..\packages\CocoaSharp.CoreGraphics.1.0.0\lib\CoreGraphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Foundation">
+      <HintPath>..\..\packages\CocoaSharp.Foundation.1.2.0\lib\Foundation.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpSwift.Attributes">
+      <HintPath>..\..\packages\SharpSwift.Attributes.1.2.0\lib\SharpSwift.Attributes.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

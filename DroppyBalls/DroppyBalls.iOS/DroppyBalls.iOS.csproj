@@ -68,12 +68,11 @@
     <MtouchArch>ARMv7, ARM64</MtouchArch>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchFloat32>true</MtouchFloat32>
-    <CodesignKey>iPhone Developer: Tran Duy Bien (2E63VCGF67)</CodesignKey>
+    <CodesignKey>iPhone Distribution: Niteco AB (43848TJX34)</CodesignKey>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchDebug>true</MtouchDebug>
     <MtouchUseSGen>true</MtouchUseSGen>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
-    <MtouchProfiling>true</MtouchProfiling>
     <IpaPackageName>
     </IpaPackageName>
   </PropertyGroup>
@@ -134,8 +133,6 @@
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
     <None Include="packages.config" />
-    <None Include="Content\Sounds\drop_fail.wav" />
-    <None Include="Content\Sounds\drop.wav" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -164,5 +161,11 @@
     <BundleResource Include="Content\Images\button_start.png" />
     <BundleResource Include="Content\Images\title_ball.png" />
     <BundleResource Include="Content\Images\title_droppy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Sounds\drop_fail.wav" />
+    <Content Include="Content\Sounds\drop.wav" />
+    <Content Include="Content\Sounds\drop_fail2.wav" />
+    <Content Include="Content\Sounds\press.wav" />
   </ItemGroup>
 </Project>

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using CocosSharp;
 using DroppyBalls.Common;
+
 namespace DroppyBalls.Common
 {
 	public class Intro : CCLayerColor
@@ -12,7 +13,7 @@ namespace DroppyBalls.Common
 
 
 		public bool isGameOver;
-		public Intro (bool isGameOver) : base (CCColor4B.AliceBlue)
+		public Intro (bool isGameOver) : base (CCColor4B.White)
 		{
 			// Load and instantate your assets here
 
@@ -163,18 +164,22 @@ namespace DroppyBalls.Common
 
 		}
 		void btnPlayClicked(object sender){
+			CCAudioEngine.SharedEngine.PlayEffect (Constant.se_tap, false);
+
 			CCScene gameScene = new CCScene (GameView);
 			gameScene.AddLayer (new GameScene ());
 			GameView.RunWithScene (gameScene);
 		}
 		void btnStarClicked(object sender){
+			CCAudioEngine.SharedEngine.PlayEffect (Constant.se_tap, false);
 			CMGameManager.Share.Rating ();
 		}
 		void btnRankClicked(object sender){
+			CCAudioEngine.SharedEngine.PlayEffect (Constant.se_tap, false);
 			CMGameCenterManager.Share.ShowLeaderBoard ();
 		}
 		void btnAdsClicked(object sender){
-
+			CCAudioEngine.SharedEngine.PlayEffect (Constant.se_tap, false);
 		}
 
 
