@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <RootNamespace>DroppyBalls.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>DroppyBalls.iOS</AssemblyName>
+    <AssemblyName>MatchBalls.iOS</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,12 +25,10 @@
     <MtouchUseSGen>true</MtouchUseSGen>
     <MtouchFastDev>true</MtouchFastDev>
     <MtouchDebug>true</MtouchDebug>
-    <CodesignKey>iPhone Developer: Quan Nguyen (MM533QG2S7)</CodesignKey>
-    <MtouchProfiling>true</MtouchProfiling>
-    <CodesignProvision>bdb845bf-eb5b-4401-8e68-67cdefbe4640</CodesignProvision>
+    <CodesignKey>iPhone Distribution: Niteco AB (43848TJX34)</CodesignKey>
+    <CodesignProvision>bc057058-a07e-4eff-8753-f23b62d6582c</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
-    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
@@ -40,8 +38,10 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchFloat32>true</MtouchFloat32>
     <MtouchUseSGen>true</MtouchUseSGen>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Distribution: Niteco AB (43848TJX34)</CodesignKey>
     <MtouchUseRefCounting>true</MtouchUseRefCounting>
+    <IpaPackageName>
+    </IpaPackageName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>full</DebugType>
@@ -118,6 +118,14 @@
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\Contents.json" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon_29.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon_57.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon_58.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon_80.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon_87.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon_114.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon_120.png" />
+    <ImageAsset Include="Resources\Images.xcassets\AppIcons.appiconset\icon_180.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.xib" />
@@ -161,11 +169,28 @@
     <BundleResource Include="Content\Images\button_start.png" />
     <BundleResource Include="Content\Images\title_ball.png" />
     <BundleResource Include="Content\Images\title_droppy.png" />
+    <BundleResource Include="Resources\Icon-Small.png" />
+    <BundleResource Include="Resources\Icon.png" />
+    <BundleResource Include="Resources\Icon-Small%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-40%402x.png" />
+    <BundleResource Include="Resources\Icon%402x.png" />
+    <BundleResource Include="Resources\Icon-60%402x.png" />
+    <BundleResource Include="Resources\Icon-72.png" />
+    <BundleResource Include="Resources\Icon-72%402x.png" />
+    <BundleResource Include="Resources\Icon-76.png" />
+    <BundleResource Include="Resources\Icon-76%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-50.png" />
+    <BundleResource Include="Resources\Icon-Small-50%402x.png" />
+    <BundleResource Include="Resources\Icon-Small-40.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Sounds\drop_fail.wav" />
     <Content Include="Content\Sounds\drop.wav" />
     <Content Include="Content\Sounds\drop_fail2.wav" />
     <Content Include="Content\Sounds\press.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <ITunesArtwork Include="iTunesArtwork%402x" />
+    <ITunesArtwork Include="iTunesArtwork" />
   </ItemGroup>
 </Project>

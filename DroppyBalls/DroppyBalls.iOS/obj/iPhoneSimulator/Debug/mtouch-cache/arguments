@@ -4,12 +4,11 @@
 	--cache \
 	/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/obj/iPhoneSimulator/Debug/mtouch-cache \
 	--sim \
-	/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhoneSimulator/Debug/DroppyBalls.iOS.app \
+	/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhoneSimulator/Debug/MatchBalls.iOS.app \
 	--executable \
-	DroppyBalls.iOS \
+	MatchBalls.iOS \
 	--fastdev \
 	--debug \
-	--profiling \
 	--nolink \
 	--sdkroot \
 	/Applications/Xcode.app/Contents/Developer \
@@ -168,4 +167,4 @@
 	/Projects/DroppyBalls/DroppyBalls/DroppyBalls.Common/bin/Debug/DroppyBalls.Common.dll \
 	--target-framework \
 	"Xamarin.iOS,v1.0" \
-	/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhoneSimulator/Debug//DroppyBalls.iOS.exe \
+	/Projects/DroppyBalls/DroppyBalls/DroppyBalls.iOS/bin/iPhoneSimulator/Debug//MatchBalls.iOS.exe \

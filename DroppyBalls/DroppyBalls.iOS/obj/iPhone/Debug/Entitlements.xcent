@@ -3,10 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>get-task-allow</key>
-	<true/>
+	<false/>
 	<key>application-identifier</key>
-	<string>7M5FPB54L3.com.niteco.matchballs</string>
+	<string>43848TJX34.com.niteco.matchballs</string>
 	<key>com.apple.developer.team-identifier</key>
-	<string>7M5FPB54L3</string>
+	<string>43848TJX34</string>
+	<key>aps-environment</key>
+	<string>production</string>
+	<key>beta-reports-active</key>
+	<true/>
 </dict>
 </plist>
