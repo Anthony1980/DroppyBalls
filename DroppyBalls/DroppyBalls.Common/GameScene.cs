@@ -19,7 +19,7 @@ namespace DroppyBalls.Common
 		CatchingBar bar;
 		CCLabel lblScore;
 	
-	
+		bool isGameOver = false;
 
 		public GameScene () : base (CCColor4B.White)
 		{
@@ -102,7 +102,7 @@ namespace DroppyBalls.Common
 
 		void gameOver(){
 
-
+			CMGameManager.Share.isPause = false;
 			CCScene gameScene = new CCScene (GameView);
 			Intro intro = new Intro (true);
 			intro.isGameOver = true;
@@ -119,7 +119,7 @@ namespace DroppyBalls.Common
 
 
 		
-			if (touches.Count > 0) {
+			if (touches.Count > 0 && !isGameOver) {
 				// Perform touch handling here
 				CCPoint pos = touches[0].Location;
 				if (pos.X > Constant.winSizeX / 2) {
@@ -135,7 +135,8 @@ namespace DroppyBalls.Common
 		}
 
 		public void NeedRespawn() {
-			this.generateBall ();
+			if (!isGameOver)
+				this.generateBall ();
 		}
 		public void NeedCheckPair(Ball ball){
 
@@ -151,26 +152,30 @@ namespace DroppyBalls.Common
 				CCAudioEngine.SharedEngine.PlayEffect (Constant.se_drop, false);
 
 			} else {
+				if (!isGameOver) {
 
-				CCAudioEngine.SharedEngine.PlayEffect (Constant.se_drop_fail, false);
-				//game over
-				if (CMGameManager.Share.score > CMGameManager.Share.bestScore) {
-					CMGameManager.Share.bestScore = CMGameManager.Share.score;
+					this.isGameOver = true;
+					CMGameManager.Share.isPause = true;
+					CCAudioEngine.SharedEngine.PlayEffect (Constant.se_drop_fail, false);
+					//game over
+					if (CMGameManager.Share.score > CMGameManager.Share.bestScore) {
+						CMGameManager.Share.bestScore = CMGameManager.Share.score;
 
-					CMGameManager.Share.SetBestScore (CMGameManager.Share.bestScore);
-					CMGameManager.Share.SetScore (CMGameManager.Share.score);
-				
-				} else {
-					CMGameManager.Share.SetScore (CMGameManager.Share.score);
+						CMGameManager.Share.SetBestScore (CMGameManager.Share.bestScore);
+						CMGameManager.Share.SetScore (CMGameManager.Share.score);
+
+					} else {
+						CMGameManager.Share.SetScore (CMGameManager.Share.score);
+					}
+
+
+					this.RunActions (new CCDelayTime (0.70f), new CCCallFunc (this.gameOver));
 				}
-
-			
-				this.gameOver();
 
 			}
 
-
-			ball.RemoveFromParent ();
+			if (!isGameOver)
+				ball.RemoveFromParent ();
 		}
 
 

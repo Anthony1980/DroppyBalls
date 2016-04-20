@@ -78,29 +78,31 @@ namespace DroppyBalls.Common
 
 		void ApplyVelocity(float dt){
 
-			PositionX += this.VelocityX * dt;
-			PositionY += this.VelocityY * dt;
-			if ((this.isRespawned == false) && (PositionY < Constant.winSizeY - Constant.highNeedRespawn)) {
+			if (!CMGameManager.Share.isPause) {
+				PositionY += Constant.ballVelocityY * dt;
+				if ((this.isRespawned == false) && (PositionY < Constant.winSizeY - Constant.highNeedRespawn)) {
 
-				this.isRespawned = true;
-				ballCallBack.NeedRespawn ();
+					this.isRespawned = true;
+					ballCallBack.NeedRespawn ();
 
-			}
-			float h = this.sprite.BoundingBox.Size.Height * this.defaultScale / 2;
+				}
+				float h = this.sprite.BoundingBox.Size.Height * this.defaultScale / 2;
 
-			if ((PositionY < h + Constant.highDestructor)&& !this.isMergedAnim) {
+				if ((PositionY < h + Constant.highDestructor)&& !this.isMergedAnim) {
 
-				this.sprite.ScaleY = this.defaultScale*(PositionY - Constant.highDestructor)/h;
-				if(!this.isMergedAnim){
-					this.isMergedAnim = true;
-					this.AnimFadeOut ();
+					this.sprite.ScaleY = this.defaultScale*(PositionY - Constant.highDestructor)/h;
+					if(!this.isMergedAnim){
+						this.isMergedAnim = true;
+						this.AnimFadeOut ();
+					}
+				}
+				if (PositionY < Constant.highDestructor) {
+
+					ballCallBack.NeedCheckPair (this);
+
 				}
 			}
-			if (PositionY < Constant.highDestructor) {
 
-				ballCallBack.NeedCheckPair (this);
-
-			}
 		}
 		public void AnimFadeOut(){
 

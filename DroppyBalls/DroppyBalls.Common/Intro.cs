@@ -140,18 +140,18 @@ namespace DroppyBalls.Common
 			menuPlay.PositionY = title2.PositionY - 250;
 
 
-			var btnAds = new CCMenuItemImage (new CCSprite (Constant.btn_ads), new CCSprite (Constant.btn_ads), btnAdsClicked);
-			CCMenu menuAds = new CCMenu (btnAds);
-			AddChild (menuAds);
-			menuAds.PositionX = Constant.winSizeX / 4;
-			menuAds.PositionY = menuPlay.PositionY - 60;
+//			var btnAds = new CCMenuItemImage (new CCSprite (Constant.btn_ads), new CCSprite (Constant.btn_ads), btnAdsClicked);
+//			CCMenu menuAds = new CCMenu (btnAds);
+//			AddChild (menuAds);
+//			menuAds.PositionX = Constant.winSizeX / 4;
+//			menuAds.PositionY = menuPlay.PositionY - 60;
 
 
 			var btnStar = new CCMenuItemImage (new CCSprite (Constant.btn_star), new CCSprite (Constant.btn_star), btnStarClicked);
 			CCMenu menuStar = new CCMenu (btnStar);
 			AddChild (menuStar);
-			menuStar.PositionX = Constant.winSizeX / 2;
-			menuStar.PositionY = menuAds.PositionY - 60;
+			menuStar.PositionX = Constant.winSizeX / 4;
+			menuStar.PositionY = menuPlay.PositionY - 60;
 
 
 
@@ -159,7 +159,7 @@ namespace DroppyBalls.Common
 			CCMenu menuRank = new CCMenu (btnRank);
 			AddChild (menuRank);
 			menuRank.PositionX = Constant.winSizeX*3/4;
-			menuRank.PositionY = menuAds.PositionY;
+			menuRank.PositionY = menuStar.PositionY;
 
 
 		}

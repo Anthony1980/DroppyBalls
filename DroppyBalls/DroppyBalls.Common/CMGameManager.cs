@@ -13,6 +13,7 @@ namespace DroppyBalls.Common
 
 		public long score;
 		public long bestScore;
+		public bool isPause = false;
 
 		private CMGameManager () 
 		{

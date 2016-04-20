@@ -52,7 +52,8 @@ namespace DroppyBalls.Common
 				listCB [i].track = i-2;
 				float posX = (listCB[i].track *( Constant.winSizeX / 8 ) + Constant.winSizeX/16);
 				CCMoveTo mt = new CCMoveTo(Constant.moveBarDelay,new CCPoint(posX,0));
-				var ease = new CCEaseSineIn(mt);
+				var ease = new CCEaseInOut(mt,1.0f);
+				listCB [i].StopAllActions ();
 				listCB [i].RunAction (ease);
 			}
 		}
@@ -67,7 +68,8 @@ namespace DroppyBalls.Common
 				listCB [i].track = i-2;
 				float posX = (listCB[i].track *( Constant.winSizeX / 8 ) + Constant.winSizeX/16);
 				CCMoveTo mt = new CCMoveTo(Constant.moveBarDelay,new CCPoint(posX,0));
-				var ease = new CCEaseSineOut (mt);
+				var ease = new CCEaseInOut (mt,1.0f);
+				listCB [i].StopAllActions ();
 				listCB [i].RunAction (ease);
 			}
 		}
