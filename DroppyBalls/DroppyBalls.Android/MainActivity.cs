@@ -40,8 +40,8 @@ namespace DroppyBalls.Android
 				var contentSearchPaths = new List<string> () { "Fonts", "Sounds" };
 				CCSizeI viewSize = gameView.ViewSize;
 
-				int width = 1024;
-				int height = 768;
+				int width = 414;
+				int height = 736;
 
 				// Set world dimensions
 				gameView.DesignResolution = new CCSizeI (width, height);

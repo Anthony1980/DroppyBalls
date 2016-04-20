@@ -12,9 +12,9 @@
     <AndroidResgenClass>Resource</AndroidResgenClass>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidApplication>True</AndroidApplication>
-    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
     <AssemblyName>DroppyBalls.Android</AssemblyName>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -27,6 +27,8 @@
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
     <ConsolePause>false</ConsolePause>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -34,8 +36,9 @@
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
     <ConsolePause>false</ConsolePause>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -86,4 +89,24 @@
     <Folder Include="Assets\Content\Sounds\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Content\Images\ball_green.png" />
+    <AndroidAsset Include="Assets\Content\Images\ball_orange.png" />
+    <AndroidAsset Include="Assets\Content\Images\ball_red.png" />
+    <AndroidAsset Include="Assets\Content\Images\ball_yellow.png" />
+    <AndroidAsset Include="Assets\Content\Images\block_green.png" />
+    <AndroidAsset Include="Assets\Content\Images\block_orange.png" />
+    <AndroidAsset Include="Assets\Content\Images\block_red.png" />
+    <AndroidAsset Include="Assets\Content\Images\block_yellow.png" />
+    <AndroidAsset Include="Assets\Content\Images\button_ads.png" />
+    <AndroidAsset Include="Assets\Content\Images\button_rank.png" />
+    <AndroidAsset Include="Assets\Content\Images\button_star.png" />
+    <AndroidAsset Include="Assets\Content\Images\button_start.png" />
+    <AndroidAsset Include="Assets\Content\Images\title_ball.png" />
+    <AndroidAsset Include="Assets\Content\Images\title_droppy.png" />
+    <AndroidAsset Include="Assets\Content\Sounds\drop_fail.wav" />
+    <AndroidAsset Include="Assets\Content\Sounds\drop_fail2.wav" />
+    <AndroidAsset Include="Assets\Content\Sounds\drop.wav" />
+    <AndroidAsset Include="Assets\Content\Sounds\press.wav" />
+  </ItemGroup>
 </Project>

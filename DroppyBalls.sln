@@ -54,4 +54,12 @@ Global
 		{FB04B1FA-465E-4635-A395-04D803399B14}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{FB04B1FA-465E-4635-A395-04D803399B14}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.VersionControlPolicy = $2
+		$2.inheritsSet = Mono
+	EndGlobalSection
 EndGlobal

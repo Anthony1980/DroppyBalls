@@ -17,6 +17,8 @@ namespace DroppyBalls.Common
 		{
 			// Load and instantate your assets here
 
+
+
 			this.isGameOver = isGameOver;
 
 			// Make any renderable node objects (e.g. sprites) children of this layer
@@ -28,6 +30,8 @@ namespace DroppyBalls.Common
 			AddChild (title1);
 			title1.PositionY = Constant.winSizeY - title1.ContentSize.Height/2;
 			title1.Scale = 0.85f;
+
+
 			var title2 = new CCSprite (Constant.title_ball) {
 				PositionX = Constant.winSizeX/1.8f,
 				PositionY = title1.PositionY - title1.ContentSize.Height/2,
@@ -161,7 +165,7 @@ namespace DroppyBalls.Common
 			menuRank.PositionX = Constant.winSizeX*3/4;
 			menuRank.PositionY = menuStar.PositionY;
 
-
+		
 		}
 		void btnPlayClicked(object sender){
 			CCAudioEngine.SharedEngine.PlayEffect (Constant.se_tap, false);
