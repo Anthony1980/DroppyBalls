@@ -42,7 +42,7 @@ namespace DroppyBalls.Common
 
 			if (!this.isGameOver) {
 				var str_score = String.Format ("{0}{1}", Constant.scoreTitle,CMGameManager.Share.GetScore());
-				var lblScore = new CCLabel (str_score, "Arial", Constant.scoreFontSize) {
+				var lblScore = new CCLabel (str_score, "HelveticaNeue", Constant.scoreFontSize,CCLabelFormat.SystemFont) {
 
 					Color = new CCColor3B(180,180,180),
 					HorizontalAlignment = CCTextAlignment.Center,
@@ -54,7 +54,7 @@ namespace DroppyBalls.Common
 				lblScore.PositionY = title2.PositionY - 120;
 
 				var str_bestScore =  String.Format ("{0}{1}", Constant.bestScoreTitle, CMGameManager.Share.GetBestScore());
-				var lblBestScore = new CCLabel (str_bestScore, "Arial", Constant.scoreFontSize) {
+				var lblBestScore = new CCLabel (str_bestScore, "HelveticaNeue", Constant.scoreFontSize,CCLabelFormat.SystemFont) {
 
 					Color = new CCColor3B(180,180,180),
 					HorizontalAlignment = CCTextAlignment.Center,
@@ -71,7 +71,7 @@ namespace DroppyBalls.Common
 				CCNode node_score = new CCNode ();
 
 				var str_title_score = String.Format ("{0}", Constant.totalScoreTitle);
-				var titleScore = new CCLabel (str_title_score, "Arial", Constant.titleGameOverScoreFontSize){
+				var titleScore = new CCLabel (str_title_score, "HelveticaNeue", Constant.titleGameOverScoreFontSize,CCLabelFormat.SystemFont){
 					Color = new CCColor3B(180,180,180),
 					HorizontalAlignment = CCTextAlignment.Center,
 					VerticalAlignment = CCVerticalTextAlignment.Center,
@@ -80,7 +80,7 @@ namespace DroppyBalls.Common
 				node_score.AddChild (titleScore);
 
 				var str_score = String.Format ("{0}", CMGameManager.Share.GetScore());
-				var score = new CCLabel (str_score, "Arial-bold", Constant.scoreGameOverFontSize){
+				var score = new CCLabel (str_score, "HelveticaNeue-Medium", Constant.scoreGameOverFontSize,CCLabelFormat.SystemFont){
 					Color = new CCColor3B(180,180,180),
 					HorizontalAlignment = CCTextAlignment.Center,
 					VerticalAlignment = CCVerticalTextAlignment.Center,
@@ -99,7 +99,7 @@ namespace DroppyBalls.Common
 				CCNode node_highScore = new CCNode ();
 			
 				var str_title_high_score = String.Format ("{0}", Constant.highScoreTitle);
-				var titleHighScore = new CCLabel (str_title_high_score, "Arial", Constant.titleGameOverScoreFontSize){
+				var titleHighScore = new CCLabel (str_title_high_score, "HelveticaNeue", Constant.titleGameOverScoreFontSize,CCLabelFormat.SystemFont){
 					Color = new CCColor3B(180,180,180),
 					HorizontalAlignment = CCTextAlignment.Center,
 					VerticalAlignment = CCVerticalTextAlignment.Center,
@@ -108,7 +108,7 @@ namespace DroppyBalls.Common
 				node_highScore.AddChild (titleHighScore);
 
 				var str_high_score = String.Format ("{0}", CMGameManager.Share.GetBestScore());
-				var highScore = new CCLabel (str_high_score, "Arial-bold", Constant.scoreGameOverFontSize){
+				var highScore = new CCLabel (str_high_score, "HelveticaNeue-Medium", Constant.scoreGameOverFontSize,CCLabelFormat.SystemFont){
 					Color = new CCColor3B(180,180,180),
 					HorizontalAlignment = CCTextAlignment.Center,
 					VerticalAlignment = CCVerticalTextAlignment.Center,

@@ -29,7 +29,7 @@ namespace DroppyBalls.Common
 
 			CMGameManager.Share.score = 0;
 
-			lblScore = new CCLabel ("0", "Arial-bold", Constant.scoreGameFontSize) {
+			lblScore = new CCLabel ("0", "HelveticaNeue-Medium", Constant.scoreGameFontSize, CCLabelFormat.SystemFont) {
 
 				Color = new CCColor3B(180,180,180),
 				HorizontalAlignment = CCTextAlignment.Center,

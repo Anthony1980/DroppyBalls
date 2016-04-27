@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.0</string>
 	<key>CFBundleVersion</key>
-	<string>1.0.1</string>
+	<string>1.0.10</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
@@ -29,7 +29,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>CFBundleIdentifier</key>
-	<string>com.niteco.matchballs</string>
+	<string>com.smarty.matchballsaga</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-Small</string>
