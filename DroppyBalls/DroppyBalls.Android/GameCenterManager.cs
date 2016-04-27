@@ -1,35 +1,36 @@
-﻿using Xamarin.Forms;
+﻿using System;
 using System.Collections.Generic;
-using DroppyBalls.Android;
-using DroppyBalls.Common;
+using CocosSharp;
 
-[assembly: Xamarin.Forms.Dependency (typeof (GameCenterManager))]
 namespace DroppyBalls.Android
 {
-			
-	public class GameCenterManager : Java.Lang.Object, IGameCenterManager
+	public class GameCenterManager : CCLayerColor
 	{
+		public GameCenterManager () : base (CCColor4B.AliceBlue)
+		{
+			// Load and instantate your assets here
 
-		public void ReportScore (long score, string category){
-
-		}
-		public void SubmitAchievement (string identifier, double percentComplete, string achievementName){
-
-		}
-		public void ResetAchievement (){
-
-		}
-		public void ShowLeaderBoard(){
-
-		}
-		public void SetAuthenticateHandle(){
-
-		}
-		public void UpdateHighScore (){
-
+			// Make any renderable node objects (e.g. sprites) children of this layer
 		}
 
+		protected override void AddedToScene ()
+		{
+			base.AddedToScene ();
 
+			// Use the bounds to layout the positioning of our drawable assets
+			CCRect bounds = VisibleBoundsWorldspace;
+
+			// Register for touch events
+			var touchListener = new CCEventListenerTouchAllAtOnce ();
+			touchListener.OnTouchesEnded = OnTouchesEnded;
+			AddEventListener (touchListener, this);
+		}
+
+		void OnTouchesEnded (List<CCTouch> touches, CCEvent touchEvent)
+		{
+			if (touches.Count > 0) {
+				// Perform touch handling here
+			}
+		}
 	}
 }
-
